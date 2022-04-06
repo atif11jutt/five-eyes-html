@@ -44,7 +44,7 @@
       <div id="scrollable" class="scrollable">
         <nav class="navigation">
           <a href="/">
-            <img src="./assets/mini-logo.png" alt="Five Eyes Logo" class="navigation__logo" /></a>
+            <img src="./assets/logo.png" alt="Five Eyes Logo" class="navigation__logo__dark" /></a>
 
           <div class="navigation__links">
             <a href="./aboutus.html" class="navigation__link">About Us</a><a href="./careers.html"
@@ -60,11 +60,34 @@
 
           <section class="home">
             <div class="home__wrapper">
-              <h1 class="home__title" data-animation="paragraph">
-                At <span>Five Eyes</span>, we aim to adapt and improve the way
-                you and your business is protected against data breaches with
-                the latest cyber requirements.
-              </h1>
+
+              <div class="carousel">
+                <div class="slides">
+                  
+                  <h1 class="home__title slide" data-animation="paragraph">
+                    At <span>Five Eyes</span>, we aim to adapt and improve the way
+                    you and your business is protected against data breaches with
+                    the latest cyber requirements.
+                  </h1>
+
+                  <h1 class="home__title slide" data-animation="paragraph">
+                    At <span>Five Eyes</span>, we aim to adapt and improve the way
+                    you and your business is protected against data breaches with
+                    the latest cyber requirements.
+                  </h1>
+
+                  <h1 class="home__title slide" data-animation="paragraph">
+                    At <span>Five Eyes</span>, we aim to adapt and improve the way
+                    you and your business is protected against data breaches with
+                    the latest cyber requirements.
+                  </h1>
+
+                   </div>
+                <div class="controls">
+                  <div class="control prev-slide">&#9668;</div>
+                  <div class="control next-slide">&#9658;</div>
+                </div>
+              </div>
 
               <svg class="home__arrow" viewBox="0 0 16 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -72,6 +95,44 @@
               </svg>
             </div>
           </section>
+
+          <script>
+            const delay = 3000; //ms
+
+            const slides = document.querySelector(".slides");
+            const slidesCount = slides.childElementCount;
+            const maxLeft = (slidesCount - 1) * 100 * -1;
+
+            let current = 0;
+
+            function changeSlide(next = true) {
+              if (next) {
+                current += current > maxLeft ? -100 : current * -1;
+              } else {
+                current = current < 0 ? current + 100 : maxLeft;
+              }
+
+              slides.style.left = current + "%";
+            }
+
+            let autoChange = setInterval(changeSlide, delay);
+            const restart = function () {
+              clearInterval(autoChange);
+              autoChange = setInterval(changeSlide, delay);
+            };
+
+            // Controls
+            document.querySelector(".next-slide").addEventListener("click", function () {
+              changeSlide();
+              restart();
+            });
+
+            document.querySelector(".prev-slide").addEventListener("click", function () {
+              changeSlide(false);
+              restart();
+            });
+
+          </script>
 
           <section class="services">
             <div class="services__title__wrapper">
@@ -276,6 +337,9 @@
                 <p class="footer__label" data-animation="paragraph">
                   Campbell, ACT 2612
                 </p>
+                <div class="mt-5"></div>
+                <a href="mailto:enquiries@fiveeyes.com.au" class="footer__label"
+                  data-animation="paragraph">enquiries@fiveeyes.com.au</a>
               </div>
 
               <div class="footer__socials">
@@ -319,18 +383,6 @@
                 </div>
               </div>
 
-              <div class="footer__sponsors">
-                <p class="footer__title" data-animation="paragraph">
-                  Sponsors
-                </p>
-
-                <div class="footer__images__grid">
-                  <img class="footer__images__grid__image" src="./assets/solderOn.png" alt="Cisco"
-                    crossorigin="anonymous" />
-                  <img class="footer__images__grid__image" src="./assets/npca.png" alt="Cisco"
-                    crossorigin="anonymous" />
-                </div>
-              </div>
             </div>
           </footer>
         </div>
