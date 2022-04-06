@@ -1,0 +1,12 @@
+.noise {
+  &::before {
+    @extend %cover;
+
+    background-image: url("../assets/noise.png");
+    content: "";
+    pointer-events: none;
+    position: fixed;
+    opacity: 0.1;
+    z-index: z("noise");
+  }
+}

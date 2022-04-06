@@ -1,0 +1,100 @@
+.navigation {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem 11.8rem 0;
+  pointer-events: none;
+  position: absolute;
+  text-transform: none;
+  z-index: z("navigation");
+  width: 100%;
+
+  @include media("<=tablet") {
+    padding: 3rem 4rem;
+  }
+
+  @include media("<phone") {
+    align-items: flex-start;
+    padding: 3rem 2rem;
+  }
+}
+
+.navigation--dark {
+  left: 0;
+  top: 0;
+
+  & .navigation__link {
+    color: $color-black;
+
+    @include media("<=tablet") {
+      margin-right: 3rem;
+    }
+
+    @include media("<phone") {
+      margin-right: 0;
+    }
+  }
+
+  & .navigation__button {
+    background-color: $color-black;
+    color: $color-white;
+  }
+}
+
+.navigation__logo {
+  width: 5rem;
+  height: 6.2rem;
+}
+
+.navigation__logo__dark {
+  width: 16.1rem;
+
+  @include media("<=tablet") {
+    width: 12.1rem;
+  }
+}
+
+.navigation__links {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include media("<phone") {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.navigation__link {
+  color: $color-white;
+  display: block;
+  margin-right: 6rem;
+
+  @include media("<=tablet") {
+    margin-right: 3rem;
+  }
+
+  &:first-child {
+    @include media("<phone") {
+      margin-top: 0;
+    }
+  }
+
+  @include media("<phone") {
+    margin-top: 0.2rem;
+    margin-right: 0;
+  }
+}
+
+.navigation__button {
+  background-color: $color-white;
+  border-radius: 3rem;
+  cursor: pointer;
+  color: $color-black;
+  padding: 1.6rem 2.5rem;
+
+  @include media("<phone") {
+    display: none;
+  }
+}

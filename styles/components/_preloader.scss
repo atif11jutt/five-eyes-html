@@ -1,0 +1,32 @@
+.preloader {
+  @extend %center;
+
+  background: $color-alabaster;
+  color: $color-black;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  transform-origin: 0 0;
+  z-index: z("preloader");
+  width: 100vw;
+
+  // display: none;
+}
+
+.preloader__number {
+  @extend %title-500;
+
+  line-height: 1;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  opacity: 0;
+}
+
+.preloader__logo {
+  opacity: 0;
+
+  @include media("<=tablet") {
+    width: 25%;
+  }
+}

@@ -1,0 +1,39 @@
+.services__grid__item__canvas {
+  // display: block;
+  // position: absolute;
+  // left: 0;
+  // top: 0;
+  // opacity: 0.6;
+  // background-color: rgb(40, 117, 107);
+
+  cursor: grab;
+  display: block;
+  height: 35rem;
+  width: 35rem;
+
+  @include media(">desktop") {
+    height: 40rem !important;
+    margin-top: 4rem;
+    width: 40rem !important;
+  }
+
+  @include media("<=tablet") {
+    height: 25rem;
+    margin-top: 4rem;
+    width: 25rem;
+  }
+
+  @include media("<phone") {
+    height: 25rem;
+    opacity: 0.55;
+    width: 25rem;
+  }
+}
+
+// .webgl {
+//   display: block;
+//   position: fixed;
+//   z-index: -1;
+//   top: 0;
+//   left: 0;
+// }

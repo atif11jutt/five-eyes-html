@@ -1,0 +1,123 @@
+.services {
+  background-color: $color-white;
+  color: $color-black;
+  padding: 20rem 11.8rem;
+
+  @include media("<=tablet") {
+    padding: 8.6rem 4rem;
+  }
+
+  @include media("<phone") {
+    padding: 8.6rem 2rem;
+  }
+}
+
+.services__title__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15rem;
+
+  @include media("<phone") {
+    margin-bottom: 6rem;
+  }
+}
+
+.services__title {
+  @extend %title-100;
+
+  @include media("<phone") {
+    font-weight: 500;
+    white-space: nowrap;
+  }
+}
+
+.services__grid {
+  display: grid;
+  row-gap: 10rem;
+
+  @include media("<=tablet") {
+    row-gap: 6rem;
+  }
+}
+
+.services__grid__item {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  width: 130rem;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+
+    & > .services__grid__item__info {
+      margin-left: 12.1rem;
+      margin-right: 0;
+
+      @include media("<=tablet") {
+        margin-left: auto;
+      }
+    }
+
+    & > .services__grid__item__canvas {
+      @include media("<=tablet") {
+        margin-left: auto;
+      }
+    }
+  }
+
+  @include media("<=tablet") {
+    display: block;
+    width: 100%;
+  }
+}
+
+.services__grid__item__info {
+  margin-right: 12.1rem;
+
+  @include media("<=tablet") {
+    margin-right: 0;
+  }
+}
+
+.services__grid__item__title {
+  @extend %title-60;
+
+  line-height: 1;
+}
+
+.services__grid__item__label {
+  font-weight: 300;
+  margin-top: 4rem;
+  width: 69.3rem;
+
+  @include media("<=tablet") {
+    opacity: 0.75;
+    width: 100%;
+  }
+}
+
+// .services__grid__item__canvas {
+//   background-color: rgb(40, 117, 107);
+//   display: block;
+//   height: 25rem;
+//   width: 25rem;
+
+//   @include media("<=tablet") {
+//     margin-top: 4rem;
+//   }
+// }
+
+.services__grid__item__line {
+  background-color: $color-black;
+  display: block;
+  height: 0.2rem;
+  margin-top: 10rem;
+  width: 100%;
+
+  @include media("<=tablet") {
+    margin-top: 6rem;
+  }
+}

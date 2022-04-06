@@ -1,0 +1,153 @@
+.news {
+  background-color: $color-black;
+
+  color: $color-white;
+  padding: 20rem 11.8rem;
+
+  @include media("<=tablet") {
+    padding: 8.6rem 4rem;
+  }
+
+  @include media("<phone") {
+    padding: 8.6rem 2rem;
+  }
+}
+
+.news__title__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15rem;
+
+  @include media("<phone") {
+    margin-bottom: 6rem;
+  }
+}
+
+.news__title {
+  @extend %title-100;
+
+  @include media("<phone") {
+    font-weight: 500;
+    white-space: nowrap;
+  }
+}
+
+.news__grid {
+  column-gap: 14.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 9rem;
+
+  @include media("<=tablet") {
+    column-gap: 0;
+    grid-template-columns: 1fr;
+  }
+
+  @include media("<phone") {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 6rem;
+  }
+
+  @media (max-width: 767px) and (orientation:landscape) {
+    column-gap: 6rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.news__grid__item__media {
+  height: 48.4rem;
+  position: relative;
+  overflow: hidden;
+  width: 77.3rem;
+
+  &:hover .news__grid__item__media__image {
+    transform: scale(1.05);
+  }
+
+  @include media("<=tablet") {
+    height: 40.4rem;
+    width: 100%;
+  }
+
+  @include media("<phone") {
+    height: 21.9rem;
+    width: 100%;
+  }
+
+  @media (max-width: 767px) and (orientation:landscape) {
+    height: 24rem;
+  }
+}
+
+.news__grid__item__media__image {
+  @extend %cover;
+
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.news__grid__item__title {
+  @extend %title-20;
+
+  line-height: 1.2;
+  margin-top: 2rem;
+}
+
+.news__grid__item__label {
+  @extend %description-16;
+
+  margin-top: 1.2rem;
+
+  div {
+    opacity: 0.9;
+
+    @include media("<phone") {
+      opacity: 0.6;
+    }
+  }
+}
+
+.news__grid__item__line {
+  background: $color-white;
+  display: block;
+  height: 0.2rem;
+  margin-top: 4rem;
+  width: 100%;
+
+  @include media("<phone") {
+    margin-top: 3rem;
+    height: 0.1rem;
+  }
+}
+
+.news__grid__button__wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 14rem;
+
+  @include media("<phone") {
+    margin-top: 6rem;
+  }
+}
+
+.news__grid__button {
+  @extend %description-18;
+
+  background-color: transparent;
+  border: 0.2rem solid $color-white;
+  border-radius: 3rem;
+  font-weight: 500;
+  padding: 1.5rem 5rem;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-black;
+  }
+
+  @include media("<phone") {
+    border-width: 0.1rem;
+  }
+}

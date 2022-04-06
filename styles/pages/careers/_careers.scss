@@ -1,0 +1,295 @@
+.careers {
+  padding: 0 11.8rem;
+
+  @include media("<=tablet") {
+    padding: 0 4rem;
+  }
+
+  @include media("<phone") {
+    padding: 0 2rem;
+  }
+}
+
+.careers__info {
+}
+
+.careers__canvas {
+  display: block;
+  height: 34rem;
+  position: absolute;
+  top: 12rem;
+  right: 36%;
+  width: 44rem;
+
+  @include media("<=tablet") {
+    display: none;
+  }
+}
+
+.careers__info__title {
+  @extend %title-100;
+
+  margin-top: 21.5rem;
+
+  @include media("<phone") {
+    font-size: 4rem;
+    white-space: nowrap;
+  }
+}
+
+.careers__info__label {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  width: 50rem;
+
+  @include media("<phone") {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+
+.careers__grid {
+  column-gap: 41.1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10rem;
+  row-gap: 7.1rem;
+
+  @include media("<=tablet") {
+    column-gap: 10rem;
+  }
+
+  @include media("<phone") {
+    grid-template-columns: 1fr;
+  }
+}
+
+.careers__grid__item {
+  &:hover .careers__grid__item__header {
+    color: $color-java;
+  }
+
+  &:hover .careers__grid__item__arrow {
+    transform: translateX(20%);
+  }
+}
+
+.careers__grid__item__info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.careers__grid__item__info__headers {
+  align-items: center;
+  display: flex;
+
+  @include media("<=tablet") {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.careers__grid__item__header {
+  font-family: $font-poppins;
+  font-size: 1.7rem;
+  margin-right: 8.8rem;
+  transition: all 0.2s ease;
+
+  @include media("<=tablet") {
+    margin-top: 1.2rem;
+  }
+
+  @include media("<phone") {
+    margin-right: 0;
+  }
+}
+
+.careers__grid__item__subheader {
+  @include media("<phone") {
+    opacity: 0.75;
+  }
+}
+
+.careers__grid__item__arrow {
+  fill: $color-black;
+  height: 1.6rem;
+  transition: all 0.2s ease;
+  width: 2rem;
+
+  @include media("<phone") {
+    width: 1.6rem;
+  }
+}
+
+.careers__grid__item__line {
+  background-color: $color-black;
+  display: block;
+  height: 0.2rem;
+  margin-top: 3.3rem;
+  width: 100%;
+
+  @include media("<phone") {
+    margin-top: 2.3rem;
+    height: 0.1rem;
+  }
+}
+
+.careers__table {
+  align-content: center;
+  column-gap: 4rem;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 16rem;
+
+  @include media("<=tablet") {
+    column-gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 14rem;
+    row-gap: 4rem;
+  }
+
+  @include media("<phone") {
+    column-gap: 0;
+    grid-template-columns: 1fr;
+    margin-top: 10rem;
+    row-gap: 4rem;
+  }
+}
+
+.careers__table__item {
+  border: 0.2rem solid $color-black;
+  padding: 5rem 5.4rem;
+
+  &:last-child {
+    background-color: $color-black;
+    color: $color-white;
+  }
+
+  @include media("<phone") {
+    border: 0.1rem solid $color-black;
+    padding: 4rem 3.4rem;
+    width: 100%;
+  }
+}
+
+.careers__table__item__title {
+}
+
+.team {
+  padding: 0 11.8rem;
+
+  @include media("<=tablet") {
+    padding: 0 4rem;
+  }
+
+  @include media("<phone") {
+    padding: 0 2rem;
+  }
+}
+
+.team__info {
+}
+
+.team__info__title {
+  @extend %title-100;
+
+  margin-top: 21.5rem;
+
+  @include media("<=tablet") {
+    margin-top: 18rem;
+  }
+
+  @include media("<phone") {
+    font-size: 4rem;
+    white-space: nowrap;
+  }
+}
+
+.team__info__label {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  width: 50rem;
+
+  @include media("<phone") {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+
+.team__footer__form {
+  column-gap: 2.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 2.5rem;
+
+  @include media("<=tablet") {
+    align-content: flex-end;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 8.6rem;
+  }
+
+  @include media("<phone") {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 100%;
+  }
+}
+
+br {
+  @include media("<phone") {
+    display: none;
+  }
+}
+
+.team__footer__form__cv {
+  label {
+    border: 0.15rem solid $color-black;
+    border-radius: 0.2rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    padding: 1.5rem 2.2rem;
+    width: 100%;
+  }
+
+  input {
+    display: none;
+  }
+}
+
+.team__footer__form__input {
+  border: 0.15rem solid $color-black;
+  border-radius: 0.2rem;
+  padding: 1.5rem 2.2rem;
+  margin-top: 1rem;
+  width: 100%;
+
+  &::placeholder {
+    font-family: $font-poppins;
+    opacity: 0.7;
+  }
+
+  &[type="submit"] {
+    background-color: $color-black;
+    color: $color-white;
+    cursor: pointer;
+    font-family: $font-poppins;
+    height: fit-content;
+    margin-top: 0.5rem;
+  }
+
+  @include media("<phone") {
+    width: 100%;
+  }
+}
+
+.team__footer__form__filename {
+  font-size: 1.4rem;
+  margin-top: 0.6rem;
+}
