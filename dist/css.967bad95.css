@@ -542,7 +542,7 @@ body::-webkit-scrollbar {
 }
 
 .navigation__logo__dark {
-  width: 16.1rem;
+  width: 20rem;
 }
 
 @media (max-width: 1024px) {
@@ -958,9 +958,30 @@ body::-webkit-scrollbar {
 .home__title {
   color: #ffffff;
   line-height: 1.2;
-  padding: 25.8rem 0 0 11.8rem;
+  padding: 25.8rem 0 0 0;
   text-align: left;
   width: 160rem;
+}
+
+.home__para {
+  color: #ffffff;
+  line-height: 1.2;
+  padding: 0 0; 
+  text-align: left;
+  width: 160rem;
+  font-size: 4rem;
+  padding-top: 20px;
+}
+
+.home__link{
+  color: #ffffff;
+  line-height: 1.2;
+  padding: 0 0; 
+  text-align: left;
+  width: 160rem;
+  font-size: 4rem;
+  margin-top: 20px;
+  display: inline-block;
 }
 
 .home__title span {
@@ -969,7 +990,7 @@ body::-webkit-scrollbar {
 
 @media (max-width: 1024px) {
   .home__title {
-    padding: 25rem 4rem;
+    padding: 25rem 0 0 0;
     width: 100%;
   }
 }
@@ -2928,7 +2949,6 @@ body::-webkit-scrollbar {
 }
 
 
-
 .carousel {
   /* width: 80vw; */
   height: 90vh;
@@ -2974,12 +2994,14 @@ body::-webkit-scrollbar {
   transform: translateY(-50%);
   display: flex;
   width: 100%;
+  
   transition: 1s ease-in-out all;
 }
 .carousel .slides .slide {
   min-width: 100%;
   min-height: 250px;
   height: auto;
+  padding: 15vh 7vw;
 }
 
 
