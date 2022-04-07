@@ -1368,6 +1368,10 @@ body::-webkit-scrollbar {
   margin-right: 0;
 }
 
+.services__grid__item__info b{
+  font-weight: 600;
+}
+
 @media (max-width: 1024px) {
   .services__grid__item:nth-child(even) > .services__grid__item__info {
     margin-left: auto;
