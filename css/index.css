@@ -1570,6 +1570,7 @@ body::-webkit-scrollbar {
   padding: 15px;
   transition: 0.4s;
   text-align: center;
+  background: #fff;
 }
 
 .values-row2{
@@ -1633,7 +1634,7 @@ body::-webkit-scrollbar {
   display: -ms-flexbox;
   display: flex;
   margin: 8.6rem 0;
-  font-size: 5rem;
+  /* font-size: 5rem; */
 }
 
 .background__title span {
