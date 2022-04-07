@@ -359,9 +359,11 @@
   <script src="/app.c0e5f9db.js" type="module"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>$(".servicess__categories__box").click(function () {
-  $(this).addClass("category--activated").siblings().removeClass("category--activated");
+  $(this).siblings().removeClass("category--activated");
+  $(this).addClass("category--activated");
   var target = $(this).data('target');
-  $(target).addClass("active--grid").siblings().removeClass("active--grid");
+  $(target).siblings().removeClass("active--grid");
+  $(target).addClass("active--grid");
 });</script>
 </body>
 

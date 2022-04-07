@@ -14,14 +14,14 @@
   <meta name="og:description" content="Five Eyes sovereign consultancy with 20 years experience in cyber security, have been deployed throughout Australia to
   combat, and provide novel solutions for the most challenging
   problems that clients encounter." />
-  <meta property="og:image" content="/assets/logo.png" />
+  <meta property="og:image" content="./assets/logo.png" />
 
-  <link rel="manifest" href="/assets/site.webmanifest" />
-  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
-  <link rel="icon" sizes="32x32" href="/assets/favicon-32x32.png" />
-  <link rel="icon" sizes="16x16" href="/assets/favicon-16x16.png" />
-  <link rel="mask-icon" href="/assets/favicon.ico" />
+  <link rel="manifest" href="./assets/site.webmanifest" />
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+  <link rel="icon" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="icon" sizes="16x16" href="./assets/favicon-16x16.png" />
+  <link rel="mask-icon" href="./assets/favicon.ico" />
   <title>Five Eyes | Services</title>
 
   <link rel="stylesheet" href="./css/index.css" />
@@ -367,9 +367,11 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     $(".servicess__categories__box").click(function(){
-      $(this).addClass("category--activated").siblings().removeClass("category--activated");
+      $(this).siblings().removeClass("category--activated");
+      $(this).addClass("category--activated")
       var target = $(this).data('target');
-      $(target).addClass("active--grid").siblings().removeClass("active--grid")
+      $(target).siblings().removeClass("active--grid")
+      $(target).addClass("active--grid")
     })
   </script>
 </body>
