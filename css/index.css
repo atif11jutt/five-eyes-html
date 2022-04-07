@@ -2812,9 +2812,13 @@ body::-webkit-scrollbar {
   -webkit-box-direction: reverse;
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
+  margin-bottom: 3rem;
+}
+.servicess__line {
+  margin-top: 0 !important;
 }
 
-.servicess__categories__box:first-child .servicess__categories__label {
+.servicess__categories__box.category--activated .servicess__categories__label {
   color: #12c0c0;
 }
 
@@ -2823,17 +2827,6 @@ body::-webkit-scrollbar {
   visibility: hidden;
 }
 
-.servicess__categories__box:nth-child(2),
-.servicess__categories__box:nth-child(3) {
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-}
-
-.servicess__categories__box:nth-child(2) .servicess__categories__label__arrow,
-.servicess__categories__box:nth-child(3) .servicess__categories__label__arrow {
-  margin-top: 2rem;
-}
 
 @media (max-width: 1024px) {
   .servicess__categories__box {
@@ -2910,7 +2903,7 @@ body::-webkit-scrollbar {
 }
 
 .categories {
-  padding: 6rem 11.8rem 0;
+  padding: 6rem 11.8rem;
 }
 
 @media (max-width: 1024px) {
@@ -2976,26 +2969,25 @@ body::-webkit-scrollbar {
   transition: all 0.4s ease;
 }
 
-.categories__grid__card:first-child {
-  border: none;
-  background-color: transparent;
+.categories__grid__card:hover {
+  height: auto;
 }
 
-.categories__grid__card:first-child .categories__grid__header {
+.categories__grid__card.child:hover .categories__grid__header {
   font-size: 2.4rem;
   color: #12c0c0;
   font-weight: 500;
 }
 
-.categories__grid__card:first-child .categories__grid__label {
-  overflow: hidden;
+.categories__grid__card:hover .categories__grid__label {
+  overflow: visible;
   display: -webkit-box;
   -webkit-line-clamp: inherit;
   -webkit-box-orient: vertical;
 }
 
 .categories__grid__card:hover {
-  background-color: #f0f0f0;
+  background-color: #d7d7d7;
 }
 
 @media (max-width: 1024px) {
@@ -3015,6 +3007,7 @@ body::-webkit-scrollbar {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  transition: 0.4s;
 }
 
 .categories__grid__button {
