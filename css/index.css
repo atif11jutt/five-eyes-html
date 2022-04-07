@@ -1751,13 +1751,14 @@ body::-webkit-scrollbar {
 .reasons__grid__item {
   border: 0.2rem solid #ffffff;
   padding: 7.4rem 8.7rem;
+  transition: 0.4s;
 }
 
-.reasons__grid__item:last-child {
+.reasons__grid__item:hover {
   background-color: #ffffff;
 }
 
-.reasons__grid__item:last-child .reasons__grid__item__label {
+.reasons__grid__item:hover .reasons__grid__item__label {
   color: #000000;
   font-weight: 500;
 }
