@@ -1568,10 +1568,29 @@ body::-webkit-scrollbar {
   text-align: center;
 }
 
+.values-row2{
+  margin-top: 30px;
+}
+
+.values-row2 .value-item {
+  margin: 10px;
+  width: 18%;
+  box-shadow: 0 0 0px #00000052;
+  padding: 15px;
+  transition: 0.4s;
+  text-align: center;
+  background: #00b0f0;
+  color: #fff;
+}
+
 .value-item h2 {
   font-size: 4rem;
   padding-bottom: 10px;
   text-align: center;
+}
+
+.values-row2 .value-item h2 {
+  font-size: 3rem;
 }
 
 .values-row .value-item:hover {
@@ -3115,6 +3134,7 @@ body::-webkit-scrollbar {
   opacity: 0.5;
   transition: ease 0.3s;
   cursor: pointer;
+  line-height: 1;
 }
 .carousel .controls .control:hover {
   opacity: 1;
