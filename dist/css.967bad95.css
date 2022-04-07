@@ -1570,6 +1570,11 @@ body::-webkit-scrollbar {
 
 .values-row2{
   margin-top: 30px;
+
+}
+
+.values-row2.col-3 .value-item {
+  width: 30%;
 }
 
 .values-row2 .value-item {
@@ -1624,6 +1629,7 @@ body::-webkit-scrollbar {
   display: -ms-flexbox;
   display: flex;
   margin: 8.6rem 0;
+  font-size: 5rem;
 }
 
 .background__title span {
@@ -2411,9 +2417,10 @@ body::-webkit-scrollbar {
 .careers__table__item {
   border: 0.2rem solid #000000;
   padding: 5rem 5.4rem;
+  transition: 0.4s;
 }
 
-.careers__table__item:last-child {
+.careers__table__item:hover {
   background-color: #000000;
   color: #ffffff;
 }
