@@ -2883,9 +2883,9 @@ body::-webkit-scrollbar {
   color: #12c0c0;
 }
 
-.servicess__categories__label.category--activated
+.servicess__categories__box.category--activated
   .servicess__categories__label__arrow {
-  visibility: hidden;
+  visibility: visible;
 }
 
 .servicess__categories__label__arrow {
@@ -2896,6 +2896,7 @@ body::-webkit-scrollbar {
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
   border-top: 1rem solid #000000;
+  visibility: hidden;
 }
 
 @media (max-width: 1024px) {
