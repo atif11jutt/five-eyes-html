@@ -1571,6 +1571,8 @@ body::-webkit-scrollbar {
   transition: 0.4s;
   text-align: center;
   background: #fff;
+  border: 1px solid #000;
+  color: #000;
 }
 
 .values-row2{
@@ -1589,8 +1591,9 @@ body::-webkit-scrollbar {
   padding: 15px;
   transition: 0.4s;
   text-align: center;
-  background: #00b0f0;
-  color: #fff;
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
 }
 
 .value-item h2 {
