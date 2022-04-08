@@ -63,7 +63,7 @@
           <section class="home">
             <div class="home__wrapper">
 
-              <div class="owl-carousel owl-theme">
+              <div class="owl-carousel owl-theme" id="home_slider">
                 <!-- 1 -->
                 <div class="item">
                   <h1 class="home__title" data-animation="paragraph">
@@ -103,42 +103,6 @@
               </svg>
             </div>
           </section>
-
-          <script>var delay = 5000; //ms
-
-var slides = document.querySelector(".slides");
-var slidesCount = slides.childElementCount;
-var maxLeft = (slidesCount - 1) * 100 * -1;
-var current = 0;
-
-function changeSlide() {
-  var next = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
-
-  if (next) {
-    current += current > maxLeft ? -100 : current * -1;
-  } else {
-    current = current < 0 ? current + 100 : maxLeft;
-  }
-
-  slides.style.left = current + "%";
-}
-
-var autoChange = setInterval(changeSlide, delay);
-
-var restart = function restart() {
-  clearInterval(autoChange);
-  autoChange = setInterval(changeSlide, delay);
-}; // Controls
-
-
-document.querySelector(".next-slide").addEventListener("click", function () {
-  changeSlide();
-  restart();
-});
-document.querySelector(".prev-slide").addEventListener("click", function () {
-  changeSlide(false);
-  restart();
-});</script>
 
           <section class="services">
             <div class="services__title__wrapper">
@@ -396,7 +360,7 @@ document.querySelector(".prev-slide").addEventListener("click", function () {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>$(function () {
   // Owl Carousel
-  var owl = $(".owl-carousel");
+  var owl = $("#home_slider");
   owl.owlCarousel({
     items: 1,
     margin: 10,
