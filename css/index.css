@@ -344,8 +344,11 @@ body,
 /* home 1st slider */
 
 .home__wrapper .item{
-  padding: 20rem 11.8rem 4rem;
+  padding: 12rem 11.8rem 4rem;
   height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .owl-theme .owl-nav{
@@ -1029,7 +1032,7 @@ body::-webkit-scrollbar {
 .home__title {
   color: #ffffff;
   line-height: 1.2;
-  padding: 25.8rem 0 0 0;
+  /* padding: 25.8rem 0 0 0; */
   text-align: left;
   width: 160rem;
 }
