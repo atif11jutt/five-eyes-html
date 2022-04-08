@@ -208,6 +208,39 @@
           <!-- slider -->
           <section>
 
+            <div class="owl-carousel owl-theme" id="home_slider">
+              <!-- 1 -->
+              <div class="item">
+                <h1 class="home__title" data-animation="paragraph">
+                  Welcome to <span>Five Eyes Consulting</span>
+                </h1>
+                <p class="home__para" data-animation="paragraph">
+                  Australia’s trusted consultancy for Information Security across the Five Eyes Nations
+                </p>
+                <a href="/aboutus.html" data-animation="paragraph" class="home__link">Learn more</a>
+              </div>
+              <!-- 2 -->
+              <div class="item">
+                <h1 class="home__title" data-animation="paragraph">
+                  Build a <span>Career</span> with Us / Join our team
+                </h1>
+                <p class="home__para" data-animation="paragraph">
+                  Five Eyes Consulting is an organisation built on the pillars of community and culture. We have created an atmosphere where self-development and innovation are encouraged, and where your career aspirations will be supported.
+                </p>
+                <a href="/aboutus.html" data-animation="paragraph" class="home__link">Learn more</a>
+              </div>
+              <!-- 3 -->
+              <div class="item">
+                <h1 class="home__title" data-animation="paragraph">
+                  Welcome to <span>Five Eyes Consulting</span>
+                </h1>
+                <p class="home__para" data-animation="paragraph">
+                  Australia’s trusted consultancy for Information Security across the Five Eyes Nations
+                </p>
+                <a href="/aboutus.html" data-animation="paragraph" class="home__link">Learn more</a>
+              </div>
+              
+            </div>
 
           </section>
 
@@ -279,6 +312,23 @@
   </div>
 
   <script src="/app.c0e5f9db.js" type="module"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>$(function () {
+  // Owl Carousel
+  var owl = $("#home_slider");
+  owl.owlCarousel({
+    items: 1,
+    margin: 10,
+    loop: true,
+    nav: true
+  });
+});</script>
 </body>
 
 </html>
