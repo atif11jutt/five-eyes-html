@@ -1695,6 +1695,10 @@ img, figure{
   font-size: 5rem;
 }
 
+.reasons__title img, .background__title img{
+  width: 5rem;
+}
+
 .background__title span {
   margin-right: 2rem;
   opacity: 0.3;
