@@ -1829,11 +1829,15 @@ body::-webkit-scrollbar {
 
 .contacts {
   padding: 0 11.8rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 @media (max-width: 1024px) {
   .contacts {
     padding: 0 4rem;
+    flex-direction: column;
   }
 }
 
@@ -2280,8 +2284,10 @@ body::-webkit-scrollbar {
   }
 }
 
-.careers__info__title {
+.careers__info__title, .team__info__title {
   margin-top: 21.5rem;
+  font-family: inherit;
+  font-size: 5rem;
 }
 
 @media (max-width: 767px) {
@@ -2484,11 +2490,15 @@ body::-webkit-scrollbar {
 
 .team {
   padding: 0 11.8rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 @media (max-width: 1024px) {
   .team {
     padding: 0 4rem;
+    flex-direction: column;
   }
 }
 
@@ -3130,9 +3140,9 @@ body::-webkit-scrollbar {
 .service__info {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [2];
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 8rem;
+  /* -ms-grid-columns: (1fr) [2]; */
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 4rem;
   margin-top: 10rem;
 }
 
