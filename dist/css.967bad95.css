@@ -1498,7 +1498,7 @@ body::-webkit-scrollbar {
   line-height: 1.1;
   text-transform: uppercase;
   margin-top: 5rem;
-  color: #12c0c0;
+  /* color: #12c0c0; */
 }
 
 .about__para {
