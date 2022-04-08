@@ -304,7 +304,7 @@ body,
 .footer__marquee,
 .services__grid__item__title {
   font-family: "Clash Display";
-  font-size: 6rem;
+  font-size: 5.5rem;
 }
 
 @media (max-width: 1024px) {
@@ -1461,7 +1461,7 @@ body::-webkit-scrollbar {
   }
 }
 .services__grid__item__link {
-  width: 69.3rem;
+  /* width: 69.3rem; */
   margin-top: 10px;
 }
 
@@ -1698,6 +1698,8 @@ img, figure{
 .background__title span {
   margin-right: 2rem;
   opacity: 0.3;
+  transform: translateY(-0.5rem);
+  display: inline-block;
 }
 
 @media (max-width: 767px) {
