@@ -1648,7 +1648,11 @@ body::-webkit-scrollbar {
   display: -ms-flexbox;
   display: flex;
   margin: 8.6rem 0;
-  /* font-size: 5rem; */
+  
+}
+
+.reasons__title, .background__title{
+  font-size: 5rem;
 }
 
 .background__title span {
