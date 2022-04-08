@@ -265,7 +265,7 @@
                 <div class="team__footer__form__number">
                   <label for="numberTxt" class="team__footer__form__label" data-animation="paragraph">Contact
                     Number</label>
-                  <input type="number" id="numberTxt" placeholder="Contact Number *" class="team__footer__form__input">
+                  <input type="text" id="numberTxt" placeholder="Contact Number *" class="team__footer__form__input">
                 </div>
 
                 <div class="team__footer__form__location">
@@ -276,6 +276,7 @@
                 <div class="team__footer__form__cv">
                   <label for="cvTxt" class="team__footer__form__label" data-animation="paragraph">Curriculum
                     (CV)</label>
+                    <input type="file" id="cvTxt" name="" cv="">
                   <p class="team__footer__form__filename">
                     Please attach your cv in the email
                   </p>
@@ -290,6 +291,114 @@
       </div>
     </div>
   </div>
+
+
+  <!-- slider -->
+  <section class="background">
+
+    <h3 class="background__title" data-animation="paragraph">
+      Five Eyes News
+    </h3>
+
+    <div class="owl-carousel owl-theme" id="news_slider">
+      <!-- 1 -->
+      <div class="item">
+        <a href="/blog-post.html" class="news__grid__item">
+          <figure class="news__grid__item__media">
+            <img class="news__grid__item__media__image" src="/news.7aaebfed.jpg" alt="News Cover" crossorigin="anonymous">
+          </figure>
+
+          <h3 class="news__grid__item__title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            adipiscing dolor.
+          </h3>
+
+          <p class="news__grid__item__label" data-animation="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, adipiscing ipsum dolor sit
+            amet.
+          </p>
+
+        </a>
+      </div>
+      <!-- 2 -->
+      <div class="item">
+        <a href="/blog-post.html" class="news__grid__item">
+          <figure class="news__grid__item__media">
+            <img class="news__grid__item__media__image" src="/news.7aaebfed.jpg" alt="News Cover" crossorigin="anonymous">
+          </figure>
+
+          <h3 class="news__grid__item__title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            adipiscing dolor.
+          </h3>
+
+          <p class="news__grid__item__label" data-animation="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, adipiscing ipsum dolor sit
+            amet.
+          </p>
+
+        
+        </a>
+      </div>
+      <!-- 3 -->
+      <div class="item">
+        <a href="/blog-post.html" class="news__grid__item">
+          <figure class="news__grid__item__media">
+            <img class="news__grid__item__media__image" src="/news.7aaebfed.jpg" alt="News Cover" crossorigin="anonymous">
+          </figure>
+
+          <h3 class="news__grid__item__title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            adipiscing dolor.
+          </h3>
+
+          <p class="news__grid__item__label" data-animation="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, adipiscing ipsum dolor sit
+            amet.
+          </p>
+
+          
+        </a>
+      </div>
+
+      <!-- 4 -->
+      <div class="item">
+        <a href="/blog-post.html" class="news__grid__item">
+          <figure class="news__grid__item__media">
+            <img class="news__grid__item__media__image" src="/news.7aaebfed.jpg" alt="News Cover" crossorigin="anonymous">
+          </figure>
+
+          <h3 class="news__grid__item__title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            adipiscing dolor.
+          </h3>
+
+          <p class="news__grid__item__label" data-animation="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, adipiscing ipsum dolor sit
+            amet.
+          </p>
+
+          
+        </a>
+      </div>
+
+    </div>
+
+    <p style="text-align: right;">
+      <a href="/news.html">View all News</a>
+    </p>
+
+  </section>
+
+
 
 
 
@@ -352,6 +461,39 @@
   </footer>
 
   <script src="/app.c0e5f9db.js" type="module"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>$(function () {
+  // Owl Carousel
+  var owl = $("#news_slider");
+  owl.owlCarousel({
+    items: 3,
+    margin: 40,
+    loop: true,
+    nav: false,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        margin: 20
+      },
+      600: {
+        items: 2,
+        margin: 20
+      },
+      1024: {
+        items: 3
+      },
+      1366: {
+        items: 3
+      }
+    }
+  });
+});</script>
 </body>
 
 </html>
