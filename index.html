@@ -63,47 +63,40 @@
           <section class="home">
             <div class="home__wrapper">
 
-              <div class="carousel">
-                <div class="slides">
-                  <!-- 1 -->
-                  <div class=" slide">
-                    <h1 class="home__title" data-animation="paragraph">
-                      Welcome to <span>Five Eyes Consulting</span>
-                    </h1>
-                    <p class="home__para" data-animation="paragraph">
-                      Australia’s trusted consultancy for Information Security across the Five Eyes Nations
-                    </p>
-                    <a href="/aboutus.html" data-animation="paragraph" class="home__link">Learn more</a>
-                  </div>
-
-                  <!-- 2 -->
-                  <div class=" slide">
-                    <h1 class="home__title" data-animation="paragraph">
-                      Build a <span>Career</span> with Us / Join our team
-                    </h1>
-                    <p class="home__para" data-animation="paragraph">
-                      Five Eyes Consulting is an organisation built on the pillars of community and culture. We have created an atmosphere where self-development and innovation are encouraged, and where your career aspirations will be supported.
-                    </p>
-                    <a href="/aboutus.html" data-animation="paragraph" class="home__link">Learn more</a>
-                  </div>
-
-                  <!-- 3 -->
-                  <div class=" slide">
-                    <h1 class="home__title" data-animation="paragraph">
-                      What Ever the <span>Latest Article</span> is
-                    </h1>
-                    <p class="home__para" data-animation="paragraph">
-                      One sentence describing the article
-                    </p>
-                    <a href="/aboutus.html" data-animation="paragraph" class="home__link">Learn more</a>
-                  </div>
-
-                   </div>
-                <div class="controls">
-                  <div class="control prev-slide"><i class="fa-solid fa-chevron-left"></i></div>
-                  <div class="control next-slide"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="owl-carousel owl-theme">
+                <!-- 1 -->
+                <div class="item">
+                  <h1 class="home__title" data-animation="paragraph">
+                    Welcome to <span>Five Eyes Consulting</span>
+                  </h1>
+                  <p class="home__para" data-animation="paragraph">
+                    Australia’s trusted consultancy for Information Security across the Five Eyes Nations
+                  </p>
+                  <a href="/aboutus.html" data-animation="paragraph" class="home__link">Learn more</a>
                 </div>
+                <!-- 2 -->
+                <div class="item">
+                  <h1 class="home__title" data-animation="paragraph">
+                    Build a <span>Career</span> with Us / Join our team
+                  </h1>
+                  <p class="home__para" data-animation="paragraph">
+                    Five Eyes Consulting is an organisation built on the pillars of community and culture. We have created an atmosphere where self-development and innovation are encouraged, and where your career aspirations will be supported.
+                  </p>
+                  <a href="/aboutus.html" data-animation="paragraph" class="home__link">Learn more</a>
+                </div>
+                <!-- 3 -->
+                <div class="item">
+                  <h1 class="home__title" data-animation="paragraph">
+                    Welcome to <span>Five Eyes Consulting</span>
+                  </h1>
+                  <p class="home__para" data-animation="paragraph">
+                    Australia’s trusted consultancy for Information Security across the Five Eyes Nations
+                  </p>
+                  <a href="/aboutus.html" data-animation="paragraph" class="home__link">Learn more</a>
+                </div>
+                
               </div>
+
 
               <svg class="home__arrow" viewBox="0 0 16 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -407,6 +400,25 @@
   </div>
 
   <script src="./app/index.js" type="module"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(function() {
+  // Owl Carousel
+  var owl = $(".owl-carousel");
+  owl.owlCarousel({
+    items: 1,
+    margin: 10,
+    loop: true,
+    nav: true
+  });
+});
+
+</script>
 </body>
 
 </html>

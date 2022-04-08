@@ -342,6 +342,17 @@ body,
   }
 }
 
+/* home 1st slider */
+
+.home__wrapper .item{
+  padding: 20rem 11.8rem 4rem;
+  height: 95vh;
+}
+
+.home__wrapper .owl-theme .owl-nav{
+  display: none !important;
+}
+
 .news__title,
 .services__title,
 .about__title,
@@ -366,6 +377,11 @@ body,
   .servicess__title,
   .service__title {
     font-size: 6rem;
+  }
+
+  .home__wrapper .item{
+    padding: 5rem 4rem 4rem;
+    height: 95vh;
   }
 }
 
@@ -1025,6 +1041,7 @@ body::-webkit-scrollbar {
   padding: 0 0;
   text-align: left;
   width: 160rem;
+  max-width: 100%;
   font-size: 4rem;
   padding-top: 20px;
 }
@@ -1046,7 +1063,7 @@ body::-webkit-scrollbar {
 
 @media (max-width: 1024px) {
   .home__title {
-    padding: 25rem 0 0 0;
+    padding: 15rem 0 0 0;
     width: 100%;
   }
 }
