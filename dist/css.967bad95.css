@@ -2292,9 +2292,10 @@ body::-webkit-scrollbar {
 }
 
 .careers__info__label {
-  font-size: 1.8rem;
-  margin-top: 3rem;
-  width: 50rem;
+  /* font-size: 1.8rem;
+  margin-top: 3rem; */
+  width: 70rem;
+  max-width: 100%;
 }
 
 @media (max-width: 767px) {
@@ -2515,9 +2516,10 @@ body::-webkit-scrollbar {
 }
 
 .team__info__label {
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
   margin-top: 3rem;
-  width: 50rem;
+  width: 65rem;
+  max-width: 100%;
 }
 
 @media (max-width: 767px) {
