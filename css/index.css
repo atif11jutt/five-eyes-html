@@ -209,7 +209,7 @@ ul {
   width: 100%;
 }
 
-.preloader{
+.preloader, .about{
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1688,7 +1688,6 @@ img, figure{
   display: -ms-flexbox;
   display: flex;
   margin: 8.6rem 0;
-  
 }
 
 .reasons__title, .background__title{
@@ -1702,7 +1701,7 @@ img, figure{
 .background__title span {
   margin-right: 2rem;
   opacity: 0.3;
-  transform: translateY(-0.5rem);
+  transform: translateY(-0.4rem);
   display: inline-block;
 }
 

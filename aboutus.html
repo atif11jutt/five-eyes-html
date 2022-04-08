@@ -219,6 +219,10 @@
           <!-- slider -->
           <section class="background">
 
+            <h3 class="background__title" data-animation="paragraph">
+              Five Eyes News
+            </h3>
+
             <div class="owl-carousel owl-theme" id="news_slider">
               <!-- 1 -->
               <div class="item">
@@ -316,6 +320,10 @@
 
             </div>
 
+            <p style="text-align: right;">
+              <a href="./news.html">View all News</a>
+            </p>
+
           </section>
 
           <footer class="footer">
@@ -405,17 +413,19 @@
       var owl = $("#news_slider");
       owl.owlCarousel({
         items: 3,
-        margin: 10,
+        margin: 40,
         loop: true,
         nav: false,
         responsiveClass: true,
         responsive: {
           0: {
-            items: 1
+            items: 1,
+            margin: 20
           },
 
           600: {
-            items: 2
+            items: 2,
+            margin: 20
           },
 
           1024: {
