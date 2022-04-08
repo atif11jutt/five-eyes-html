@@ -1070,7 +1070,13 @@ body::-webkit-scrollbar {
 
 @media (max-width: 767px) {
   .home__title {
-    padding: 25rem 0 0 2rem;
+    padding: 20rem 0 0;
+  }
+  .home__para{
+    font-size: 2rem;
+  }
+  .home__link{
+    font-size: 1.5rem;
   }
 }
 
@@ -1436,7 +1442,8 @@ body::-webkit-scrollbar {
 .services__grid__item__label {
   font-weight: 300;
   margin-top: 15px;
-  width: 69.3rem;
+  width: 73rem;
+  max-width: 100%;
 }
 
 @media (max-width: 1024px) {
