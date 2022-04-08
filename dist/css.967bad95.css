@@ -348,7 +348,7 @@ body,
   height: 95vh;
 }
 
-.home__wrapper .owl-theme .owl-nav{
+.owl-theme .owl-nav{
   display: none !important;
 }
 
@@ -1594,6 +1594,12 @@ body::-webkit-scrollbar {
     right: 3rem;
   }
 }
+
+img, figure{
+  max-width: 100%;
+}
+
+
 
 /* values */
 .values {

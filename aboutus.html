@@ -207,40 +207,103 @@
           </section>
 
           <!-- slider -->
-          <section>
+          <section class="background">
 
-            <div class="owl-carousel owl-theme" id="home_slider">
+            <div class="owl-carousel owl-theme" id="news_slider">
               <!-- 1 -->
               <div class="item">
-                <h1 class="home__title" data-animation="paragraph">
-                  Welcome to <span>Five Eyes Consulting</span>
-                </h1>
-                <p class="home__para" data-animation="paragraph">
-                  Australia’s trusted consultancy for Information Security across the Five Eyes Nations
-                </p>
-                <a href="/aboutus.html" data-animation="paragraph" class="home__link">Learn more</a>
+                <a href="./blog-post.html" class="news__grid__item">
+                  <figure class="news__grid__item__media">
+                    <img class="news__grid__item__media__image" src="./assets/news.jpg" alt="News Cover"
+                      crossorigin="anonymous" />
+                  </figure>
+
+                  <h3 class="news__grid__item__title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    adipiscing dolor.
+                  </h3>
+
+                  <p class="news__grid__item__label" data-animation="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, adipiscing ipsum dolor sit
+                    amet.
+                  </p>
+
+                  <span class="news__grid__item__line"></span>
+                </a>
               </div>
               <!-- 2 -->
               <div class="item">
-                <h1 class="home__title" data-animation="paragraph">
-                  Build a <span>Career</span> with Us / Join our team
-                </h1>
-                <p class="home__para" data-animation="paragraph">
-                  Five Eyes Consulting is an organisation built on the pillars of community and culture. We have created an atmosphere where self-development and innovation are encouraged, and where your career aspirations will be supported.
-                </p>
-                <a href="/aboutus.html" data-animation="paragraph" class="home__link">Learn more</a>
+                <a href="./blog-post.html" class="news__grid__item">
+                  <figure class="news__grid__item__media">
+                    <img class="news__grid__item__media__image" src="./assets/news.jpg" alt="News Cover"
+                      crossorigin="anonymous" />
+                  </figure>
+
+                  <h3 class="news__grid__item__title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    adipiscing dolor.
+                  </h3>
+
+                  <p class="news__grid__item__label" data-animation="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, adipiscing ipsum dolor sit
+                    amet.
+                  </p>
+
+                  <span class="news__grid__item__line"></span>
+                </a>
               </div>
               <!-- 3 -->
               <div class="item">
-                <h1 class="home__title" data-animation="paragraph">
-                  Welcome to <span>Five Eyes Consulting</span>
-                </h1>
-                <p class="home__para" data-animation="paragraph">
-                  Australia’s trusted consultancy for Information Security across the Five Eyes Nations
-                </p>
-                <a href="/aboutus.html" data-animation="paragraph" class="home__link">Learn more</a>
+                <a href="./blog-post.html" class="news__grid__item">
+                  <figure class="news__grid__item__media">
+                    <img class="news__grid__item__media__image" src="./assets/news.jpg" alt="News Cover"
+                      crossorigin="anonymous" />
+                  </figure>
+
+                  <h3 class="news__grid__item__title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    adipiscing dolor.
+                  </h3>
+
+                  <p class="news__grid__item__label" data-animation="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, adipiscing ipsum dolor sit
+                    amet.
+                  </p>
+
+                  <span class="news__grid__item__line"></span>
+                </a>
               </div>
-              
+
+              <!-- 4 -->
+              <div class="item">
+                <a href="./blog-post.html" class="news__grid__item">
+                  <figure class="news__grid__item__media">
+                    <img class="news__grid__item__media__image" src="./assets/news.jpg" alt="News Cover"
+                      crossorigin="anonymous" />
+                  </figure>
+
+                  <h3 class="news__grid__item__title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    adipiscing dolor.
+                  </h3>
+
+                  <p class="news__grid__item__label" data-animation="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, adipiscing ipsum dolor sit
+                    amet.
+                  </p>
+
+                  <span class="news__grid__item__line"></span>
+                </a>
+              </div>
+
             </div>
 
           </section>
@@ -321,23 +384,42 @@
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script>
-  $(function() {
-  // Owl Carousel
-  var owl = $("#home_slider");
-  owl.owlCarousel({
-    items: 1,
-    margin: 10,
-    loop: true,
-    nav: true
-  });
-});
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(function () {
+      // Owl Carousel
+      var owl = $("#news_slider");
+      owl.owlCarousel({
+        items: 3,
+        margin: 10,
+        loop: true,
+        nav: false,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1
+          },
 
-</script>
+          600: {
+            items: 2
+          },
+
+          1024: {
+            items: 3
+          },
+
+          1366: {
+            items: 3
+          }
+        }
+      });
+    });
+
+  </script>
 </body>
 
 </html>
