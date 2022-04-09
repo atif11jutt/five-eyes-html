@@ -3188,3 +3188,76 @@ img, figure{
 .mt-5 {
   margin-top: 5px;
 }
+
+
+
+
+/* process page */
+
+.c-process-list {
+  margin-top: 5rem;
+  --count-width: 3rem;
+  --count-height: 3rem;
+  --count-font-size: 1.2rem;
+  --item-padding-left: 3rem;
+  --item-padding-bottom: 3rem;
+  list-style: none;
+}
+
+.c-process-list .c__item {
+  counter-increment: process-counter;
+  position: relative;
+  display: flex;
+  padding-bottom: 5rem;
+}
+
+.c-process {
+  transition: all 0.25s ease-in-out;
+  transition-delay: 0.075s;
+  padding-left: 3rem;
+  /* max-width: 64rem; */
+}
+
+.c-process-list .c__item:before {
+  transition: all 0.25s ease-in-out;
+  transition-delay: 0.075s;
+  content: counter(process-counter);
+  background-color: #fff;
+  border: 1px solid #12c0c0;
+  border-radius: 50%;
+  color: #12c0c0;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: var(--count-font-size);
+  display: flex;
+  flex-shrink: 0;
+  height: var(--count-height);
+  width: var(--count-width);
+  z-index: 1;
+}
+
+.c-process-list .c__item:after {
+  background-color: #12c0c0;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  left: calc(var(--count-width) / 2);
+  top: 0;
+}
+
+.c-process-list .c__item:hover:before {
+  background-color: #12c0c0;
+  color: #fff;
+}
+
+.c-process-list .c__item:hover .c-process {
+  color: #12c0c0;
+}
+
+.c-process-list .c__item:last-child {
+  padding-bottom: 0;
+}
+
