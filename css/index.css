@@ -2321,14 +2321,14 @@ img, figure{
 .careers__info__label {
   /* font-size: 1.8rem;
   margin-top: 3rem; */
-  width: 70rem;
+  /* width: 70rem; */
   max-width: 100%;
 }
 
 @media (max-width: 767px) {
   .careers__info__label {
     font-size: 1.5rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     width: 100%;
   }
 }
