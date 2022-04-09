@@ -3270,7 +3270,8 @@ img, figure{
   line-height: 1;
 }
 .c__blurb p{
-  padding-bottom: 20pz;
+  padding-bottom: 20px;
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=/css.967bad95.css.map */
