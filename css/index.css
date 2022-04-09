@@ -3195,12 +3195,12 @@ img, figure{
 /* process page */
 
 .c-process-list {
-  margin-top: 5rem;
-  --count-width: 3rem;
-  --count-height: 3rem;
-  --count-font-size: 1.2rem;
-  --item-padding-left: 3rem;
-  --item-padding-bottom: 3rem;
+  margin-top: 7rem;
+  --count-width: 5rem;
+  --count-height: 5rem;
+  --count-font-size: 2.5rem;
+  --item-padding-left: 5rem;
+  --item-padding-bottom: 5rem;
   list-style: none;
 }
 
@@ -3235,6 +3235,7 @@ img, figure{
   height: var(--count-height);
   width: var(--count-width);
   z-index: 1;
+  line-height: 1;
 }
 
 .c-process-list .c__item:after {
@@ -3261,3 +3262,13 @@ img, figure{
   padding-bottom: 0;
 }
 
+
+.c__title{
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  line-height: 1;
+}
+.c__blurb p{
+  padding-bottom: 20pz;
+}
