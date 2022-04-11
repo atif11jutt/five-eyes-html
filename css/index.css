@@ -1710,11 +1710,13 @@ img, figure{
   width: 5rem;
 }
 
-.background__title span {
-  margin-right: 2rem;
+.background__title span,
+.reasons__title span {
+  margin-right: 1rem;
   opacity: 0.3;
-  transform: translateY(-0.4rem);
-  display: inline-block;
+  transform: scale(0.8);
+  font-size: inherit;
+  font-family: inherit;
 }
 
 @media (max-width: 767px) {
