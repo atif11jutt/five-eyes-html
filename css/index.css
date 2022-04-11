@@ -1934,6 +1934,7 @@ img, figure{
   justify-content: space-between;
   padding-bottom: 6rem;
   margin-top: 10rem;
+  width: 55%;
 }
 
 .contacts__footer > .secondary__footer {
@@ -2058,6 +2059,7 @@ img, figure{
     "enquiry enquiry"
     "button button";
   row-gap: 2.2rem;
+  width: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -2128,6 +2130,7 @@ img, figure{
   border-radius: 0.2rem;
   margin-top: 1rem;
   padding: 1.5rem 2.2rem;
+  width: 100%;
 }
 
 .contacts__footer__form__input::-webkit-input-placeholder {
