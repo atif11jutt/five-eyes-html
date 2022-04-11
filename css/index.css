@@ -2,6 +2,10 @@
 
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css";
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css");
+
 *,
 *:before,
 *:after {
@@ -330,8 +334,12 @@ body,
 @media (max-width: 1024px) {
   .home__title,
   .blog__header__info__title {
-    font-size: 6rem;
+    font-size: 5rem;
   }
+  .home__para, .home__link{
+    font-size: 3rem;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -339,16 +347,20 @@ body,
   .blog__header__info__title {
     font-size: 3rem;
   }
+  .home__wrapper .item {
+    padding: 15vh 4rem 4rem !important;
+    height: 96vh !important;
+}
 }
 
 /* home 1st slider */
 
 .home__wrapper .item{
-  padding: 12rem 11.8rem 4rem;
+  padding: 35vh 11.8rem 4rem;
   height: 95vh;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .owl-theme .owl-nav{
@@ -382,7 +394,7 @@ body,
   }
 
   .home__wrapper .item{
-    padding: 5rem 4rem 4rem;
+    padding: 6vh 4rem 4rem;
     height: 95vh;
   }
 }
@@ -1084,7 +1096,7 @@ body::-webkit-scrollbar {
 
 @media (max-width: 767px) and (orientation: landscape) {
   .home__title {
-    padding: 15rem 0 6rem 4rem;
+    padding: 15rem 0 0 0;
   }
 }
 
@@ -3272,4 +3284,12 @@ img, figure{
 .c__blurb p{
   padding-bottom: 20px;
   font-size: 3rem;
+}
+
+.bg-white{
+   background-color: #ffffff;
+}
+
+#partners_slider .item{
+  padding-bottom: 30px;
 }
