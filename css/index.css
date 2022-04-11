@@ -981,8 +981,8 @@ body::-webkit-scrollbar {
 }
 
 .services__grid__item__canvas {
-  cursor: -webkit-grab;
-  cursor: grab;
+  /* cursor: -webkit-grab;
+  cursor: grab; */
   display: block;
   height: 35rem;
   width: 35rem;
