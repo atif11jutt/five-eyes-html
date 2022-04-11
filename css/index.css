@@ -3037,6 +3037,7 @@ img, figure{
 
 .categories {
   padding: 6rem 11.8rem;
+  padding-top: 0 !important;
 }
 
 @media (max-width: 1024px) {
