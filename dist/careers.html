@@ -25,7 +25,7 @@
   <title>Five Eyes | Careers</title>
 
   <link rel="stylesheet" href="/css.967bad95.css">
-</head>
+<script src="/news.js"></script></head>
 
 <body>
   <div class="noise"></div>
@@ -37,13 +37,27 @@
           <a href="./">
             <img src="/logo.e9a9c890.png" alt="Five Eyes Logo" class="navigation__logo__dark"></a>
 
-          <div class="navigation__links">
-            <a href="/aboutus.html" class="navigation__link">About Us</a>
-            <a href="/services.html" class="navigation__link">Services</a>
-            <a href="/careers.html" class="navigation__link">Careers</a>
-            <a href="/news.html" class="navigation__link">News</a>
-            <a href="/contactus.html" class="navigation__link">Contact Us</a>
-          </div>
+            <div class="navigation__links">
+              <a href="/aboutus.html" class="navigation__link">About Us</a>
+              <div>
+                <a href="javascript:void(0);" class="navigation__link">Services <i class="fa-solid fa-angle-down"></i></a>
+                <ul>
+                  <li>
+                    <a href="/cyber_security.html" class="navigation__link">Cyber security</a>
+                  </li>
+                  <li>
+                    <a href="/technology.html" class="navigation__link">Technology and architecture</a>
+                  </li>
+                  <li>
+                    <a href="/project_delivery.html" class="navigation__link">Project Delivery</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="/careers.html" class="navigation__link">Careers</a>
+              <a href="/news.html" class="navigation__link">News</a>
+              <a href="/contactus.html" class="navigation__link">Contact Us</a>
+              <!-- <a href="mailto:contact@fiveeyes.com.au" class="navigation__button">Get in touch</a> -->
+            </div>
         </nav>
 
         <div class="content" data-template="careers">
@@ -172,7 +186,7 @@
 
           <section class="background" style="padding-bottom: 0;">
             <h3 class="background__title" data-animation="paragraph">
-              <span>02.</span> Our Values <img src="/about_icon4.8bc7005c.svg" alt="icon" style="width: 5rem;">
+              <span>02.</span> Our Values
             </h3>
 
             <h3 class="background__label" data-animation="paragraph">
@@ -254,8 +268,7 @@
               </h1>
 
               <p class="team__info__label background__label" data-animation="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore.
+                In our job portal, you can find all current vacancies and job offers. We are looking forward to receive your online application.
               </p>
             </div>
 
@@ -300,6 +313,53 @@
       </div>
     </div>
   </div>
+
+
+  <!-- partners slider -->
+  <section class="background bg-white">
+    <div class="services__title__wrapper">
+      <hi class="services__title" data-animation="title">Partners</hi>
+    </div>
+    <div class="owl-carousel owl-theme" id="partners_slider">
+      <!-- 1 -->
+      <div class="item">
+        <img src="/icpm.7ff178ce.png" alt="icpm" style="width: 60%; margin: auto;">
+      </div>
+      <!-- 2 -->
+      <div class="item">
+        <img src="/Tanium.cf8013e9.png" alt="Tanium">
+      </div>
+      <!-- 3 -->
+      <div class="item">
+        <img src="/fortinet-logo.9237ae9b.svg" alt="fortinet">
+      </div>
+      <!-- 4 -->
+      <div class="item">
+        <img src="/microsoft.e7c2dc7d.png" alt="microsoft">
+      </div>
+      <!-- 5 -->
+      <div class="item">
+        <img src="/aws.419b16a0.png" alt="AWS" style="width: 50%; margin: auto;">
+      </div>
+      <!-- 6 -->
+      <div class="item">
+        <img src="/cisco.4a6e9f20.png" alt="Cisco" style="width: 80%; margin: auto;">
+      </div>
+      <!-- 7 -->
+      <div class="item">
+        <img src="/solderOn.46e79b2a.png" alt="solderOn">
+      </div>
+      <!-- 8 -->
+      <div class="item">
+        <img src="/elastic-logo.baffad6d.svg" alt="elastic">
+      </div>
+      <!-- 9 -->
+      <div class="item">
+        <img src="/Tenable_Logo.4ffe0d74.jpg" alt="Tenable">
+      </div>
+
+    </div>
+  </section>
 
 
   <!-- slider -->
@@ -471,38 +531,11 @@
 
   <script src="/app.c0e5f9db.js" type="module"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script>$(function () {
-  // Owl Carousel
-  var owl = $("#news_slider");
-  owl.owlCarousel({
-    items: 3,
-    margin: 40,
-    loop: true,
-    nav: false,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-        margin: 20
-      },
-      600: {
-        items: 2,
-        margin: 20
-      },
-      1024: {
-        items: 3
-      },
-      1366: {
-        items: 3
-      }
-    }
-  });
-});</script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="/script.c831d2e9.js"></script>
+
 </body>
 
 </html>

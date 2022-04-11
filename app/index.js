@@ -45,13 +45,17 @@ class App {
 
     this.createContent();
 
-    this.createPreloader();
+    // this.createPreloader();
     this.createPages();
 
     // this.customScroll();
     // this.marquee();
 
-    this.pageTransitions();
+    // this.pageTransitions();
+
+    // create owl carousel
+    // this.createNewsSlider();
+    
     this.createForms();
   }
 
@@ -66,6 +70,37 @@ class App {
     this.preloader = new Preloader();
 
     this.preloader.once("completed", this.onPreloaded.bind(this));
+  }
+
+  createNewsSlider(){
+    
+    var owl2 = $("#news_slider");
+    owl2.owlCarousel({
+      items: 3,
+      margin: 40,
+      loop: true,
+      nav: false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          margin: 20
+        },
+
+        600: {
+          items: 2,
+          margin: 20
+        },
+
+        1024: {
+          items: 3
+        },
+
+        1366: {
+          items: 3
+        }
+      }
+    });
   }
 
   onPreloaded() {

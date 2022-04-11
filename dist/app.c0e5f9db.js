@@ -53118,12 +53118,14 @@ var App = /*#__PURE__*/function () {
     _classCallCheck(this, App);
 
     this.pages = {};
-    this.createContent();
-    this.createPreloader();
+    this.createContent(); // this.createPreloader();
+
     this.createPages(); // this.customScroll();
     // this.marquee();
+    // this.pageTransitions();
+    // create owl carousel
+    // this.createNewsSlider();
 
-    this.pageTransitions();
     this.createForms();
   }
 
@@ -53140,6 +53142,34 @@ var App = /*#__PURE__*/function () {
     value: function createPreloader() {
       this.preloader = new _Preloader.default();
       this.preloader.once("completed", this.onPreloaded.bind(this));
+    }
+  }, {
+    key: "createNewsSlider",
+    value: function createNewsSlider() {
+      var owl2 = $("#news_slider");
+      owl2.owlCarousel({
+        items: 3,
+        margin: 40,
+        loop: true,
+        nav: false,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            margin: 20
+          },
+          600: {
+            items: 2,
+            margin: 20
+          },
+          1024: {
+            items: 3
+          },
+          1366: {
+            items: 3
+          }
+        }
+      });
     }
   }, {
     key: "onPreloaded",
@@ -55319,7 +55349,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60031" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50370" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

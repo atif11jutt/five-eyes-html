@@ -44,17 +44,30 @@
       <div id="scrollable" class="scrollable">
         <nav class="navigation">
           <a href="./">
-            <img src="/logo-white.6d90f47d.png" alt="Five Eyes Logo" class="navigation__logo__dark"></a>
+            <img src="/logo-white.6d90f47d.png" alt="Five Eyes Logo" class="navigation__logo__dark">
+          </a>
 
-
-            <div class="navigation__links">
-              <a href="/aboutus.html" class="navigation__link">About Us</a>
-              <a href="/services.html" class="navigation__link">Services</a>
-              <a href="/careers.html" class="navigation__link">Careers</a>
-              <a href="/news.html" class="navigation__link">News</a>
-              <a href="/contactus.html" class="navigation__link">Contact Us</a>
-              <!-- <a href="mailto:contact@fiveeyes.com.au" class="navigation__button">Get in touch</a> -->
+          <div class="navigation__links">
+            <a href="/aboutus.html" class="navigation__link">About Us</a>
+            <div>
+              <a href="javascript:void(0);" class="navigation__link">Services <i class="fa-solid fa-angle-down"></i></a>
+              <ul>
+                <li>
+                  <a href="/cyber_security.html" class="navigation__link">Cyber security</a>
+                </li>
+                <li>
+                  <a href="/technology.html" class="navigation__link">Technology and architecture</a>
+                </li>
+                <li>
+                  <a href="/project_delivery.html" class="navigation__link">Project Delivery</a>
+                </li>
+              </ul>
             </div>
+            <a href="/careers.html" class="navigation__link">Careers</a>
+            <a href="/news.html" class="navigation__link">News</a>
+            <a href="/contactus.html" class="navigation__link">Contact Us</a>
+            <!-- <a href="mailto:contact@fiveeyes.com.au" class="navigation__button">Get in touch</a> -->
+          </div>
         </nav>
 
         <div class="content" data-template="home">
@@ -80,7 +93,9 @@
                     Build a <span>Career</span> with Us / Join our team
                   </h1>
                   <p class="home__para" data-animation="paragraph">
-                    Five Eyes Consulting is an organisation built on the pillars of community and culture. We have created an atmosphere where self-development and innovation are encouraged, and where your career aspirations will be supported.
+                    Five Eyes Consulting is an organisation built on the pillars of community and culture. We have
+                    created an atmosphere where self-development and innovation are encouraged, and where your career
+                    aspirations will be supported.
                   </p>
                   <a href="/aboutus.html" data-animation="paragraph" class="home__link">Learn more</a>
                 </div>
@@ -94,7 +109,7 @@
                   </p>
                   <a href="/aboutus.html" data-animation="paragraph" class="home__link">Learn more</a>
                 </div>
-                
+
               </div>
 
 
@@ -123,10 +138,12 @@
                     </b>
                   </div>
                   </p>
-
                 </div>
 
-                <canvas class="services__grid__item__canvas" id="cyber__sec__canvas"></canvas>
+                <lottie-player style="padding-top: 20px;" class="services__grid__item__canvas" src="lotties/CyberSecurity.json" background="transparent" speed="1" loop="" autoplay="">
+                </lottie-player>
+
+                <!-- <canvas class="services__grid__item__canvas" id="cyber__sec__canvas"></canvas> -->
 
                 <span class="services__grid__item__line"></span>
               </div>
@@ -144,10 +161,13 @@
                     </b>
                   </div>
                   </p>
-
                 </div>
 
-                <canvas class="services__grid__item__canvas" id="network__serv__canvas"></canvas>
+                <lottie-player style="padding-top: 20px;" class="services__grid__item__canvas" src="lotties/Technology.json" background="transparent" speed="1" loop="" autoplay="">
+                </lottie-player>
+
+                <!-- <canvas class="services__grid__item__canvas" id="network__serv__canvas"></canvas> -->
+                
 
                 <span class="services__grid__item__line"></span>
               </div>
@@ -166,124 +186,253 @@
                       <a href="#.">Learn more</a>
                     </b>
                   </div>
-
                   </p>
-
                 </div>
 
-                <canvas class="services__grid__item__canvas" id="cloud__comp__canvas"></canvas>
+                <lottie-player style="padding-top: 20px;" class="services__grid__item__canvas" src="lotties/ProjectDelivery.json" background="transparent" speed="1" loop="" autoplay="">
+                </lottie-player>
+
+
+                <!-- <canvas class="services__grid__item__canvas" id="cloud__comp__canvas"></canvas> -->
 
                 <span class="services__grid__item__line"></span>
               </div>
-
-
-              <!-- <div class="services__grid__item">
-                <div class="services__grid__item__info">
-                  <h2 class="services__grid__item__title">Cyber Security</h2>
-
-                  <p class="services__grid__item__label" data-animation="paragraph">
-                    Regardless of size, your organisation’s systems, networks,
-                    programs and data are always vulnerable to unauthorised
-                    exploitation and cyber-attacks. We strive to reduce this
-                    vulnerability and risk by designing personalised IT
-                    security solutions and protocols, ensuring your business
-                    puts its best foot into the future.
-                  </p>
-                </div>
-
-                <canvas class="services__grid__item__canvas" id="security_aud__canvas"></canvas>
-
-                <span class="services__grid__item__line"></span>
-              </div> -->
             </div>
           </section>
 
+
+          <!-- partners slider -->
+          <section class="background bg-white">
+            <div class="services__title__wrapper">
+              <hi class="services__title" data-animation="title">Partners</hi>
+            </div>
+            <div class="owl-carousel owl-theme" id="partners_slider">
+              <!-- 1 -->
+              <div class="item">
+                <img src="/icpm.7ff178ce.png" alt="icpm" style="width: 60%; margin: auto;">
+              </div>
+              <!-- 2 -->
+              <div class="item">
+                <img src="/Tanium.cf8013e9.png" alt="Tanium">
+              </div>
+              <!-- 3 -->
+              <div class="item">
+                <img src="/fortinet-logo.9237ae9b.svg" alt="fortinet">
+              </div>
+              <!-- 4 -->
+              <div class="item">
+                <img src="/microsoft.e7c2dc7d.png" alt="microsoft">
+              </div>
+              <!-- 5 -->
+              <div class="item">
+                <img src="/aws.419b16a0.png" alt="AWS" style="width: 50%; margin: auto;">
+              </div>
+              <!-- 6 -->
+              <div class="item">
+                <img src="/cisco.4a6e9f20.png" alt="Cisco" style="width: 80%; margin: auto;">
+              </div>
+              <!-- 7 -->
+              <div class="item">
+                <img src="/solderOn.46e79b2a.png" alt="solderOn">
+              </div>
+              <!-- 8 -->
+              <div class="item">
+                <img src="/elastic-logo.baffad6d.svg" alt="elastic">
+              </div>
+              <!-- 9 -->
+              <div class="item">
+                <img src="/Tenable_Logo.4ffe0d74.jpg" alt="Tenable">
+              </div>
+
+            </div>
+          </section>
+
+
+
+
           <section class="news">
             <div class="news__title__wrapper">
-              <hi class="news__title" data-animation="title">Featured Articles</hi>
+              <hi class="news__title" data-animation="title">Five Eyes News</hi>
             </div>
 
-            <div class="news__grid">
-              <a href="/blog-post.html" class="news__grid__item">
-                <figure class="news__grid__item__media">
-                  <img class="news__grid__item__media__image" src="/news.7aaebfed.jpg" alt="News Cover" crossorigin="anonymous">
-                </figure>
+            <div class="owl-carousel owl-theme" id="news_slider">
+              <!-- 1 -->
+              <div class="item">
+                <a href="/blog-post.html" class="news__grid__item">
+                  <figure class="news__grid__item__media">
+                    <img class="news__grid__item__media__image" src="/news.7aaebfed.jpg" alt="News Cover" crossorigin="anonymous">
+                  </figure>
 
-                <h3 class="news__grid__item__title">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                  adipiscing dolor.
-                </h3>
+                  <h3 class="news__grid__item__title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    adipiscing dolor.
+                  </h3>
 
-                <p class="news__grid__item__label" data-animation="paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, adipiscing ipsum dolor sit
-                  amet.
-                </p>
+                  <p class="news__grid__item__label" data-animation="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, adipiscing ipsum dolor sit
+                    amet.
+                  </p>
 
-                <span class="news__grid__item__line"></span>
-              </a>
+                </a>
+              </div>
+              <!-- 2 -->
+              <div class="item">
+                <a href="/blog-post.html" class="news__grid__item">
+                  <figure class="news__grid__item__media">
+                    <img class="news__grid__item__media__image" src="/news.7aaebfed.jpg" alt="News Cover" crossorigin="anonymous">
+                  </figure>
 
-              <a href="/blog-post.html" class="news__grid__item">
-                <figure class="news__grid__item__media">
-                  <img class="news__grid__item__media__image" src="/news.7aaebfed.jpg" alt="News Cover" crossorigin="anonymous">
-                </figure>
+                  <h3 class="news__grid__item__title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    adipiscing dolor.
+                  </h3>
 
-                <h3 class="news__grid__item__title">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                  adipiscing dolor.
-                </h3>
+                  <p class="news__grid__item__label" data-animation="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, adipiscing ipsum dolor sit
+                    amet.
+                  </p>
 
-                <p class="news__grid__item__label" data-animation="paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, adipiscing ipsum dolor sit
-                  amet.
-                </p>
 
-                <span class="news__grid__item__line"></span>
-              </a>
+                </a>
+              </div>
+              <!-- 3 -->
+              <div class="item">
+                <a href="/blog-post.html" class="news__grid__item">
+                  <figure class="news__grid__item__media">
+                    <img class="news__grid__item__media__image" src="/news.7aaebfed.jpg" alt="News Cover" crossorigin="anonymous">
+                  </figure>
 
-              <a href="/blog-post.html" class="news__grid__item">
-                <figure class="news__grid__item__media">
-                  <img class="news__grid__item__media__image" src="/news.7aaebfed.jpg" alt="News Cover" crossorigin="anonymous">
-                </figure>
+                  <h3 class="news__grid__item__title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    adipiscing dolor.
+                  </h3>
 
-                <h3 class="news__grid__item__title">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                  adipiscing dolor.
-                </h3>
+                  <p class="news__grid__item__label" data-animation="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, adipiscing ipsum dolor sit
+                    amet.
+                  </p>
 
-                <p class="news__grid__item__label" data-animation="paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, adipiscing ipsum dolor sit
-                  amet.
-                </p>
 
-                <span class="news__grid__item__line"></span>
-              </a>
+                </a>
+              </div>
 
-              <a href="/blog-post.html" class="news__grid__item">
-                <figure class="news__grid__item__media">
-                  <img class="news__grid__item__media__image" src="/news.7aaebfed.jpg" alt="News Cover" crossorigin="anonymous">
-                </figure>
+              <!-- 4 -->
+              <div class="item">
+                <a href="/blog-post.html" class="news__grid__item">
+                  <figure class="news__grid__item__media">
+                    <img class="news__grid__item__media__image" src="/news.7aaebfed.jpg" alt="News Cover" crossorigin="anonymous">
+                  </figure>
 
-                <h3 class="news__grid__item__title">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                  adipiscing dolor.
-                </h3>
+                  <h3 class="news__grid__item__title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    adipiscing dolor.
+                  </h3>
 
-                <p class="news__grid__item__label" data-animation="paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, adipiscing ipsum dolor sit
-                  amet.
-                </p>
+                  <p class="news__grid__item__label" data-animation="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, adipiscing ipsum dolor sit
+                    amet.
+                  </p>
 
-                <span class="news__grid__item__line"></span>
-              </a>
+
+                </a>
+              </div>
+
             </div>
+
+
+            <!-- <div class="news__grid">
+              <a href="./blog-post.html" class="news__grid__item">
+                <figure class="news__grid__item__media">
+                  <img class="news__grid__item__media__image" src="./assets/news.jpg" alt="News Cover"
+                    crossorigin="anonymous" />
+                </figure>
+
+                <h3 class="news__grid__item__title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  adipiscing dolor.
+                </h3>
+
+                <p class="news__grid__item__label" data-animation="paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, adipiscing ipsum dolor sit
+                  amet.
+                </p>
+
+                <span class="news__grid__item__line"></span>
+              </a>
+
+              <a href="./blog-post.html" class="news__grid__item">
+                <figure class="news__grid__item__media">
+                  <img class="news__grid__item__media__image" src="./assets/news.jpg" alt="News Cover"
+                    crossorigin="anonymous" />
+                </figure>
+
+                <h3 class="news__grid__item__title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  adipiscing dolor.
+                </h3>
+
+                <p class="news__grid__item__label" data-animation="paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, adipiscing ipsum dolor sit
+                  amet.
+                </p>
+
+                <span class="news__grid__item__line"></span>
+              </a>
+
+              <a href="./blog-post.html" class="news__grid__item">
+                <figure class="news__grid__item__media">
+                  <img class="news__grid__item__media__image" src="./assets/news.jpg" alt="News Cover"
+                    crossorigin="anonymous" />
+                </figure>
+
+                <h3 class="news__grid__item__title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  adipiscing dolor.
+                </h3>
+
+                <p class="news__grid__item__label" data-animation="paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, adipiscing ipsum dolor sit
+                  amet.
+                </p>
+
+                <span class="news__grid__item__line"></span>
+              </a>
+
+              <a href="./blog-post.html" class="news__grid__item">
+                <figure class="news__grid__item__media">
+                  <img class="news__grid__item__media__image" src="./assets/news.jpg" alt="News Cover"
+                    crossorigin="anonymous" />
+                </figure>
+
+                <h3 class="news__grid__item__title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  adipiscing dolor.
+                </h3>
+
+                <p class="news__grid__item__label" data-animation="paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, adipiscing ipsum dolor sit
+                  amet.
+                </p>
+
+                <span class="news__grid__item__line"></span>
+              </a>
+            </div> -->
 
             <div class="news__grid__button__wrapper">
               <a href="#" class="news__grid__button">See all news</a>
@@ -330,19 +479,14 @@
                 <p class="footer__title" data-animation="paragraph">Email</p>
 
                 <a href="mailto:contact@fiveeyes.com.au" class="footer__label" data-animation="paragraph">contact@fiveeyes.com.au</a>
+
+                <br><br>
+                <a href="./">
+                  <img src="/logo.e9a9c890.png" alt="Five Eyes Logo" class="navigation__logo__dark">
+                </a>
+
               </div>
 
-              <div class="footer__partners">
-                <p class="footer__title" data-animation="paragraph">
-                  Partners
-                </p>
-
-                <div class="footer__images__grid">
-                  <img class="footer__images__grid__image" src="/cisco.4a6e9f20.png" alt="Cisco" crossorigin="anonymous">
-                  <img class="footer__images__grid__image" src="/microsoft.e7c2dc7d.png" alt="Cisco" crossorigin="anonymous">
-                  <img class="footer__images__grid__image" src="/amazon.49c85f76.png" alt="Cisco" crossorigin="anonymous">
-                </div>
-              </div>
 
             </div>
           </footer>
@@ -353,21 +497,11 @@
 
   <script src="/app.c0e5f9db.js" type="module"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="/script.c831d2e9.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script>$(function () {
-  // Owl Carousel
-  var owl = $("#home_slider");
-  owl.owlCarousel({
-    items: 1,
-    margin: 10,
-    loop: true,
-    nav: true
-  });
-});</script>
 </body>
 
 </html>
