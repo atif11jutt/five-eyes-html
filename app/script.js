@@ -72,6 +72,15 @@ $(function () {
 
 
 
+    $(".servicess__categories__box").click(function(){
+        $(this).siblings().removeClass("category--activated");
+        $(this).addClass("category--activated")
+        var target = $(this).data('target');
+        $(target).siblings().removeClass("active--grid")
+        $(target).addClass("active--grid")
+      })
+
+
 
 
 

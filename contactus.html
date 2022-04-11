@@ -39,10 +39,24 @@
 
             <div class="navigation__links">
               <a href="./aboutus.html" class="navigation__link">About Us</a>
-              <a href="./services.html" class="navigation__link">Services</a>
+              <div>
+                <a href="javascript:void(0);" class="navigation__link">Services <i class="fa-solid fa-angle-down"></i></a>
+                <ul>
+                  <li>
+                    <a href="./cyber_security.html" class="navigation__link">Cyber security</a>
+                  </li>
+                  <li>
+                    <a href="./technology.html" class="navigation__link">Technology and architecture</a>
+                  </li>
+                  <li>
+                    <a href="./project_delivery.html" class="navigation__link">Project Delivery</a>
+                  </li>
+                </ul>
+              </div>
               <a href="./careers.html" class="navigation__link">Careers</a>
               <a href="./news.html" class="navigation__link">News</a>
               <a href="./contactus.html" class="navigation__link">Contact Us</a>
+              <!-- <a href="mailto:contact@fiveeyes.com.au" class="navigation__button">Get in touch</a> -->
             </div>
         </nav>
 
@@ -147,28 +161,25 @@
 
         <a href="mailto:contact@fiveeyes.com.au" class="footer__label"
           data-animation="paragraph">contact@fiveeyes.com.au</a>
+
+        <br><br>
+        <a href="./">
+          <img src="./assets/logo.png" alt="Five Eyes Logo" class="navigation__logo__dark" />
+        </a>
+
       </div>
 
-      <div class="footer__partners">
-        <p class="footer__title" data-animation="paragraph">
-          Partners
-        </p>
-
-        <div class="footer__images__grid">
-          <img class="footer__images__grid__image" src="./assets/cisco.png" alt="Cisco"
-            crossorigin="anonymous" />
-          <img class="footer__images__grid__image" src="./assets/microsoft.png" alt="Cisco"
-            crossorigin="anonymous" />
-          <img class="footer__images__grid__image" src="./assets/amazon.png" alt="Cisco"
-            crossorigin="anonymous" />
-        </div>
-      </div>
 
     </div>
   </footer>
 
   <script src="./app/index.js" type="module"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="./app/script.js"></script>
 </body>
 
 </html>

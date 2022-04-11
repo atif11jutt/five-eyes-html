@@ -295,6 +295,10 @@ body,
   font-size: 4rem;
 }
 
+.careers .background__label{
+  font-size: 3.25rem;
+}
+
 @media (max-width: 1024px) {
   .background__title span,
   .background__label,
@@ -302,6 +306,9 @@ body,
   .reasons__label,
   .blog__content__subheader {
     font-size: 3rem;
+  }
+  .careers .background__label{
+    font-size: 2.5rem;
   }
 }
 
@@ -3053,6 +3060,10 @@ img, figure{
   row-gap: 4rem;
 }
 
+.categories__grid_title{
+  font-size: 2.75rem;
+  margin-bottom: 3rem;
+}
 @media (max-width: 1024px) {
   .categories__grid {
     -ms-grid-columns: (1fr) [2];
