@@ -57,7 +57,7 @@ $(function () {
 
         600: {
           items: 4,
-          margin: 20
+          margin: 30
         },
 
         1024: {

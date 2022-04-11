@@ -1360,7 +1360,7 @@ body::-webkit-scrollbar {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 }
 
 @media (max-width: 767px) {
@@ -3292,4 +3292,50 @@ img, figure{
 
 #partners_slider .item{
   padding-bottom: 30px;
+}
+
+/* navbar dropdown */
+
+.navigation__links > div{
+  position: relative;
+}
+
+.navigation__links ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  /* padding-top: 1rem; */
+  left: 0;
+  display: none;
+}
+
+.navigation__links div a:hover ~ ul,
+.navigation__links div ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.navigation__links ul li {
+  clear: both;
+  width: 100%;
+}
+
+
+.navigation__links ul li a{
+  padding-top: 1rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px){
+  .navigation__links ul li a {
+    padding-top: 0.2rem;
+}
+.navigation__links ul {
+  position: relative;
+}
+.navigation__links{
+  text-align: right;
+}
 }
