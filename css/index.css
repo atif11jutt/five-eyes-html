@@ -1145,6 +1145,12 @@ body::-webkit-scrollbar {
   padding: 20rem 11.8rem;
 }
 
+.news #news_slider_cont{
+  max-width: 1400px;
+  margin: auto;
+}
+
+
 @media (max-width: 1024px) {
   .news {
     padding: 8.6rem 4rem;
@@ -1314,12 +1320,12 @@ body::-webkit-scrollbar {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 14rem;
+  margin-top: 10rem;
 }
 
 @media (max-width: 767px) {
   .news__grid__button__wrapper {
-    margin-top: 6rem;
+    margin-top: 5rem;
   }
 }
 
@@ -2574,7 +2580,7 @@ img, figure{
 }
 
 .team__info__label {
-  /* font-size: 1.8rem; */
+  font-size: 2.75rem;
   margin-top: 3rem;
   width: 65rem;
   max-width: 100%;
