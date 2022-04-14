@@ -305,11 +305,29 @@ body,
   .reasons__title span,
   .reasons__label,
   .blog__content__subheader {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
   .careers .background__label{
     font-size: 2.5rem;
   }
+
+.background__title,
+.reasons__title{
+  font-size: 4rem !important;
+}
+
+.c__title{
+  font-size: 2.75rem !important;
+}
+
+.c__blurb p{
+  font-size: 2.25rem !important;
+}
+
+.contacts__footer{
+  width: 100% !important;
+}
+
 }
 
 .footer__marquee,
@@ -344,7 +362,7 @@ body,
     font-size: 5rem;
   }
   .home__para, .home__link{
-    font-size: 3rem;
+    font-size: 3rem !important;
   }
 
 }
@@ -355,7 +373,7 @@ body,
     font-size: 3rem;
   }
   .home__wrapper .item {
-    padding: 15vh 4rem 4rem !important;
+    padding: 35vh 4rem 4rem !important;
     height: 96vh !important;
 }
 }
@@ -401,7 +419,7 @@ body,
   }
 
   .home__wrapper .item{
-    padding: 6vh 4rem 4rem;
+    padding: 35vh 4rem 4rem;
     height: 95vh;
   }
 }
@@ -1084,26 +1102,26 @@ body::-webkit-scrollbar {
 
 @media (max-width: 1024px) {
   .home__title {
-    padding: 15rem 0 0 0;
+    /* padding: 15rem 0 0 0; */
     width: 100%;
   }
 }
 
 @media (max-width: 767px) {
   .home__title {
-    padding: 20rem 0 0;
+    /* padding: 20rem 0 0; */
   }
   .home__para{
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
   .home__link{
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 }
 
 @media (max-width: 767px) and (orientation: landscape) {
   .home__title {
-    padding: 15rem 0 0 0;
+    /* padding: 15rem 0 0 0; */
   }
 }
 
@@ -2018,6 +2036,9 @@ img, figure{
     -ms-grid-column-align: end;
     justify-self: end;
   }
+}
+.footer__email > br{
+  display: block !important;
 }
 
 .contacts__footer > .secondary__footer .footer__information .footer__email {
@@ -2937,7 +2958,10 @@ img, figure{
   .servicess__categories {
     -ms-grid-columns: (1fr) [1];
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 2rem;
+    row-gap: 0rem;
+  }
+  .categories{
+    margin-bottom: 4rem;
   }
 }
 
@@ -3011,6 +3035,13 @@ img, figure{
     border-right: 0.6rem solid transparent;
     border-top: 0.6rem solid #000000;
     margin-left: 1.5rem;
+  }
+  .servicess__categories__label{
+    font-size: 2.5rem !important;
+  }
+
+  .categories__grid_title{
+    font-size: 2.25rem !important;
   }
 }
 
@@ -3179,6 +3210,9 @@ img, figure{
   .service {
     padding: 0 4rem;
   }
+  .service .categories__grid{
+    margin-bottom: 2rem !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3212,7 +3246,11 @@ img, figure{
   .service__info {
     -ms-grid-columns: (1fr) [1];
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 4rem;
+    row-gap: 2rem;
+  }
+  .service .categories__grid_title{
+    margin-top: 3rem;
+    font-size: 2.5rem !important;
   }
 }
 
