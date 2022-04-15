@@ -86,7 +86,8 @@ $(function () {
 
       $("#hamburger").click(function(e){
         e.preventDefault();
-        $(this).parent().find(".navigation__links").toggleClass("active")
+        $(this).parent().find(".navigation__links").toggleClass("active");
+        $("body").toggleClass("no-scroll")
       })
 
 

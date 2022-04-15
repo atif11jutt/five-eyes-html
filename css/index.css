@@ -132,6 +132,10 @@ body {
   line-height: 1;
 }
 
+body.no-scroll{
+  overflow-y: hidden;
+}
+
 ol,
 ul {
   list-style: none;
@@ -627,7 +631,7 @@ body::-webkit-scrollbar {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    padding: 3rem 2rem;
+    padding: 3rem 3rem;
   }
 }
 
@@ -668,7 +672,7 @@ body::-webkit-scrollbar {
 
 @media (max-width: 1024px) {
   .navigation__logo__dark {
-    width: 12.1rem;
+    width: 17rem;
   }
 }
 
@@ -1182,6 +1186,8 @@ body::-webkit-scrollbar {
   max-width: 1400px;
   margin: auto;
 }
+
+
 
 
 @media (max-width: 1024px) {
@@ -3231,7 +3237,7 @@ img, figure{
   padding: 0 11.8rem;
 }
 
-#service > p, #service + .background > p{
+#service > p, #service + .background > p, #news_slider + p{
   text-align: left !important;
   font-weight: 500;
 }
@@ -3440,8 +3446,10 @@ img, figure{
     transition: 0.4s;
     justify-content: flex-start;
     background: #000;
-    align-items: flex-start;
+    align-items: center;
     padding: 7vh 3rem 3rem 3rem;
+    z-index: 10000;
+    text-align: center;
   }
 
   .navigation__link {
@@ -3456,7 +3464,7 @@ img, figure{
     position: sticky;
     z-index: 1000000;
     color: #12bfbf !important;
-    font-size: 2.25rem;
+    font-size: 3.25rem;
   }
 
   .home-page #hamburger{
@@ -3468,7 +3476,11 @@ img, figure{
   }
 
   .navigation__links a {
-    padding-top: 2rem;
+    padding-top: 3vh !important;
+    font-size: 8vw;
+    white-space: normal !important;
+    line-height: 1.1;
+    display: block;
 }
 .navigation__links ul {
   position: relative;
