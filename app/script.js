@@ -82,6 +82,12 @@ $(function () {
 
 
 
+      // navbar
+
+      $("#hamburger").click(function(e){
+        e.preventDefault();
+        $(this).parent().find(".navigation__links").toggleClass("active")
+      })
 
 
 
