@@ -441,7 +441,7 @@ body,
   }
 
   
-.careers__info .background__title, .news__info__title, .contacts, .servicess__title{
+.careers__info .background__title, .news__info__title, .contacts, .servicess__title, .service__title{
   margin-top: 12rem !important;
 }
 .background__title, .team{
@@ -1197,7 +1197,7 @@ body::-webkit-scrollbar {
 
 @media (max-width: 767px) {
   .news {
-    padding: 8.6rem 2rem;
+    padding: 5rem 2rem;
   }
 }
 
@@ -1213,7 +1213,7 @@ body::-webkit-scrollbar {
 
 @media (max-width: 767px) {
   .news__title__wrapper {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -1400,7 +1400,7 @@ body::-webkit-scrollbar {
 
 @media (max-width: 767px) {
   .services {
-    padding: 8.6rem 2rem;
+    padding: 5rem 2rem;
     padding-bottom: 0;
   }
 }
@@ -3233,6 +3233,11 @@ img, figure{
 /* ------------------ */
 .service {
   padding: 0 11.8rem;
+}
+
+#service > p, #service + .background > p{
+  text-align: left !important;
+  font-weight: 500;
 }
 
 @media (max-width: 1024px) {
