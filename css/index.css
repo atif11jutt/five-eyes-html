@@ -321,11 +321,11 @@ body,
 }
 
 .c__title{
-  font-size: 2.75rem !important;
+  font-size: 3rem !important;
 }
 
 .c__blurb p{
-  font-size: 2.25rem !important;
+  font-size: 2.75rem !important;
 }
 
 .contacts__footer{
@@ -352,6 +352,9 @@ body,
   .services__grid__item__title {
     font-size: 2.4rem;
   }
+  .c__title {
+    font-size: 2.5rem !important;
+}
 }
 
 .home__title,
@@ -672,9 +675,18 @@ body::-webkit-scrollbar {
 
 @media (max-width: 1024px) {
   .navigation__logo__dark {
+    width: 18rem;
+  }
+}
+
+
+
+@media (max-width: 567px) {
+  .navigation__logo__dark {
     width: 17rem;
   }
 }
+
 
 .navigation__links {
   -webkit-box-align: center;
@@ -1061,7 +1073,7 @@ body::-webkit-scrollbar {
   }
   .home__canvas {
     padding-top: 40vh !important;
-    padding: 6rem;
+    padding: 4rem;
   }
 }
 
@@ -1785,6 +1797,9 @@ img, figure{
     font-weight: 500;
     margin-right: 1rem; */
   }
+  .aboutus .reasons__title{
+    margin-top: 0 !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1803,8 +1818,8 @@ img, figure{
 }
 
 @media (max-width: 767px) {
-  .background__label {
-    font-size: 1.8rem;
+  .background__label, .c__blurb p {
+    font-size: 1.8rem !important;
   }
 }
 
@@ -3385,6 +3400,7 @@ img, figure{
   line-height: 1;
 }
 .c__blurb p{
+  font-family: "Poppins";
   padding-bottom: 20px;
   font-size: 2.75rem;
 }
