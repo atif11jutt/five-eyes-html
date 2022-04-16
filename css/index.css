@@ -751,15 +751,19 @@ body::-webkit-scrollbar {
   padding: 6rem 11.8rem 6rem 11.8rem;
 }
 
+.copyright{
+  text-align: center;
+}
+
 @media (max-width: 1024px) {
   .footer {
-    padding: 8.6rem 4rem 3rem;
+    padding: 6rem 4rem 3rem;
   }
 }
 
 @media (max-width: 767px) {
   .footer {
-    padding: 8.6rem 2rem 3rem;
+    padding: 5rem 2rem 3rem;
   }
 }
 
@@ -1100,6 +1104,15 @@ body::-webkit-scrollbar {
   .c-process{
     padding-left: 1.5rem !important;
   }
+  .footer_logo1{
+    display: none;
+  }
+  .footer_logo2{
+    display: block !important;
+  }
+}
+.footer_logo2{
+  display: none;
 }
 
 .home__title {
@@ -2081,7 +2094,7 @@ img, figure{
     justify-self: end;
   }
 }
-.footer__email > br{
+.footer br{
   display: block !important;
 }
 
