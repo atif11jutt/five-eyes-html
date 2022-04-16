@@ -91,6 +91,12 @@ $(function () {
       })
 
 
+      // dropdown navbar mobile
+
+      $(".navigation__links > div > .navigation__link").click(function(){
+        $(this).parent().find("ul").toggleClass("active")
+      })
+
 
 
 

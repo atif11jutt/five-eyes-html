@@ -677,6 +677,10 @@ body::-webkit-scrollbar {
   .navigation__logo__dark {
     width: 18rem;
   }
+
+  .footer .navigation__logo__dark {
+    width: 15rem !important;
+  }
 }
 
 
@@ -3447,11 +3451,26 @@ img, figure{
   display: none;
 }
 
-.navigation__links div a:hover ~ ul,
-.navigation__links div ul:hover {
+@media (min-width: 768px){
+  .navigation__links div a:hover ~ ul,
+.navigation__links div ul:hover{
   visibility: visible;
   opacity: 1;
   display: block;
+}
+}
+
+@media (max-width: 767px){
+.navigation__links div ul.active {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.navigation__links ul li a::before {
+  content: "- ";
+}
+
 }
 
 .navigation__links ul li {
