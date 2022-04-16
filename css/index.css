@@ -3496,10 +3496,10 @@ img, figure{
     top: 0;
     left: 140%;
     transition: 0.4s;
-    justify-content: flex-start;
+    justify-content: center;
     background: #000;
     align-items: center;
-    padding: 7vh 3rem 3rem 3rem;
+    padding: 1rem 3rem 1rem 3rem;
     z-index: 10000;
     text-align: center;
   }
