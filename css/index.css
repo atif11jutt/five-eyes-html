@@ -3567,6 +3567,13 @@ img, figure{
     line-height: 1.1;
     display: block;
 }
+
+.navigation__links a:hover,
+.navigation__links a:focus,
+.navigation__links a:active{
+  color: #fff !important;
+}
+
 .navigation__links ul {
   position: relative;
   padding-left: 15px;
