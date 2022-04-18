@@ -664,7 +664,7 @@ body::-webkit-scrollbar {
     color: #fff !important;
   }
 
-  .navigation__links.active::after{
+  .navigation__links::after{
     content: "";
     width: 15rem;
     height: 5rem;
@@ -3528,7 +3528,7 @@ img, figure{
     height: 100vh;
     top: 0;
     left: 140%;
-    transition: 0.4s;
+    transition: 0.4s ease-in-out;
     justify-content: center;
     background: #000;
     align-items: center;
