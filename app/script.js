@@ -89,8 +89,14 @@ $(function () {
 
       $("#hamburger").click(function(e){
         e.preventDefault();
-        $(this).parent().find(".navigation__links").toggleClass("active");
-        $("body").toggleClass("no-scroll")
+        $("#mobile_navigation").addClass("active");
+        $("body").addClass("no-scroll")
+      })
+      
+      $("#hamburger-close").click(function(e){
+        e.preventDefault();
+        $("#mobile_navigation").removeClass("active");
+        $("body").removeClass("no-scroll")
       })
 
 
