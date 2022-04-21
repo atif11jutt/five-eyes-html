@@ -691,13 +691,21 @@ body::-webkit-scrollbar {
   width: 20rem;
 }
 
+.footer .navigation__logo__dark {
+  width: 16rem;
+}
+
+#mobile_navigation{
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .navigation__logo__dark {
     width: 18rem;
   }
 
   .footer .navigation__logo__dark {
-    width: 15rem !important;
+    width: 12rem !important;
   }
 }
 
@@ -1213,6 +1221,8 @@ body::-webkit-scrollbar {
   position: absolute;
   right: 11.8rem;
   width: 1.6rem;
+  cursor: pointer;
+  z-index: 100;
 }
 
 @media (max-width: 767px) {
@@ -1718,6 +1728,8 @@ body::-webkit-scrollbar {
   position: absolute;
   right: 11.8rem;
   width: 3rem;
+  cursor: pointer;
+  z-index: 100;
 }
 
 @media (max-width: 767px) {
@@ -1777,9 +1789,10 @@ img, figure{
 }
 
 .value-item h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   padding-bottom: 10px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .values-row2 .value-item h2 {
@@ -3525,6 +3538,7 @@ img, figure{
 @media (max-width: 767px){
   #mobile_navigation{
     position: fixed;
+    display: block;
     width: 100vw;
     height: 100vh;
     top: 0;

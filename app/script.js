@@ -8,7 +8,7 @@ $(function () {
       nav: true,
       autoplay:true,
       autoplayTimeout: 3500,
-      autoplaySpeed: 800
+      autoplaySpeed: 1300
     });
 
 
@@ -106,6 +106,17 @@ $(function () {
         $(this).parent().find("ul").toggleClass("active")
       })
 
+
+      // scroll down
+
+      var page_height = $(window).height();
+
+      $(".home__arrow, .about__arrow").click(function(){
+        $("html, body").animate({
+          scrollTop: page_height
+      }, 1000);
+      
+      })
 
 
 
