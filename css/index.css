@@ -1804,6 +1804,7 @@ img, figure{
 .values-row .value-item:active {
   box-shadow: 0 0 15px #00000052;
   transform: scale(1.05) translateY(-10px);
+  background-color: #12c0c0;
 }
 
 .value-item img {
@@ -1835,7 +1836,9 @@ img, figure{
 }
 
 .reasons__title, .background__title{
-  font-size: 5rem;
+  font-size: 6rem;
+  font-family: "Clash Display";
+  color: #12c0c0;
 }
 
 .reasons__title img, .background__title img{
@@ -2467,8 +2470,8 @@ img, figure{
 
 .careers__info__title, .team__info__title {
   /* margin-top: 21.5rem; */
-  font-family: inherit;
-  font-size: 5rem;
+  font-family: "Clash Display";
+  font-size: 6rem;
 }
 
 @media (max-width: 767px) {
