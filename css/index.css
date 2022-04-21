@@ -1792,6 +1792,7 @@ img, figure{
   padding-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
+  transition: 0.3s;
 }
 
 .values-row2 .value-item h2 {
@@ -1804,6 +1805,12 @@ img, figure{
   box-shadow: 0 0 15px #00000052;
   transform: scale(1.05) translateY(-10px);
   /* background-color: #12c0c0; */
+}
+
+.values-row .value-item:hover h2,
+.values-row .value-item:focus h2,
+.values-row .value-item:active h2 {
+  color: #12c0c0;
 }
 
 .value-item img {
