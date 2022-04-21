@@ -296,12 +296,12 @@ body,
 .reasons__label,
 .blog__content__subheader {
   font-family: "Clash Display";
-  font-size: 3.25rem;
+  font-size: 2.75rem;
 }
 
-.careers .background__label{
+/* .careers .background__label{
   font-size: 3.25rem;
-}
+} */
 
 @media (max-width: 1024px) {
   .background__title span,
