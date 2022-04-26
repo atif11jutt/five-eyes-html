@@ -7,7 +7,7 @@ $(function () {
       loop: true,
       nav: true,
       autoplay:true,
-      autoplayTimeout: 3500,
+      autoplayTimeout: 5000,
       autoplaySpeed: 1300
     });
 
