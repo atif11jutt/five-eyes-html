@@ -75,7 +75,6 @@ $(function () {
   ];
 
   for (let i = 0; i < news_slider.length; i++) {
-    console.log(news_slider[0].link);
     $("#news_slider").append(`
     <!-- ${i} -->
     <div class="item">
