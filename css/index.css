@@ -1388,6 +1388,10 @@ body::-webkit-scrollbar {
 
 .news__grid__item__label {
   margin-top: 1.2rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .news__grid__item__label div {
