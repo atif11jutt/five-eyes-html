@@ -44,34 +44,14 @@ $(function () {
       that we can continue to enjoy the benefits of technology while keeping our data
       and systems safe from Cyber Security threats`,
     },
-    {
-      link: "/blog-post.html",
-      image: "/assets/news.jpg",
-      title:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing dolor.",
-      para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, adipiscing ipsum dolor sit amet.",
-    },
-    {
-      link: "/blog-post.html",
-      image: "/assets/news.jpg",
-      title:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing dolor.",
-      para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, adipiscing ipsum dolor sit amet.",
-    },
-    {
-      link: "/blog-post.html",
-      image: "/assets/news.jpg",
-      title:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing dolor.",
-      para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, adipiscing ipsum dolor sit amet.",
-    },
-    {
-      link: "/blog-post.html",
-      image: "/assets/news.jpg",
-      title:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing dolor.",
-      para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, adipiscing ipsum dolor sit amet.",
-    },
+    // {
+    //   link: "/blog-post.html",
+    //   image: "/assets/news.jpg",
+    //   title:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing dolor.",
+    //   para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, adipiscing ipsum dolor sit amet.",
+    // },
+    
   ];
 
   for (let i = 0; i < news_slider.length; i++) {
