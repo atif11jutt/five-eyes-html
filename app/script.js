@@ -14,7 +14,7 @@ $(function () {
   var news_slider = [
     {
       link: "/post1.html",
-      image: "/assets/news.jpg",
+      image: "/assets/parlament-house.jpg",
       title: `Australia's Largest Ever Cyber Security Spend: $10bn Pledge to
         Double ASD & Ramp Up Offensive Cyber Operations`,
       para: `Australia is pledging to double its electronic spy agency and ramp up its
