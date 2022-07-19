@@ -51,7 +51,6 @@ $(function () {
     //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing dolor.",
     //   para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, adipiscing ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, adipiscing ipsum dolor sit amet.",
     // },
-    
   ];
 
   for (let i = 0; i < news_slider.length; i++) {
@@ -176,5 +175,20 @@ $(function () {
       },
       1000
     );
+  });
+
+  // form submit
+  $("#contact").on("submit", function (e) {
+    e.preventDefault();
+
+    $.ajax({
+      type: "post",
+      url: "form_submit.php",
+      data: $("#contact").serialize(),
+      success: function () {
+        alert("Thanks for contacting!");
+        $("#contact")[0].reset()
+      },
+    });
   });
 });

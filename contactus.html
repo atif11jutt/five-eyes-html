@@ -37,31 +37,31 @@
           <a href="./">
             <img src="./assets/logo.png" alt="Five Eyes Logo" class="navigation__logo__dark" /></a>
 
-            <div class="navigation__links">
-              <a href="./aboutus.html" class="navigation__link">About Us</a>
-              <div>
-                <a href="javascript:void(0);" class="navigation__link">Services <i class="fa-solid fa-angle-down"></i></a>
-                <ul>
-                  <li>
-                    <a href="./cyber_security.html" class="navigation__link">Cyber security</a>
-                  </li>
-                  <li>
-                    <a href="./technology.html" class="navigation__link">Technology and architecture</a>
-                  </li>
-                  <li>
-                    <a href="./project_delivery.html" class="navigation__link">Project Delivery</a>
-                  </li>
-                </ul>
-              </div>
-              <a href="./careers.html" class="navigation__link">Careers</a>
-              <a href="./news.html" class="navigation__link">News</a>
-              <a href="./contactus.html" class="navigation__link">Contact Us</a>
-              <!-- <a href="mailto:rafal@fiveeyes.com.au" class="navigation__button">Get in touch</a> -->
+          <div class="navigation__links">
+            <a href="./aboutus.html" class="navigation__link">About Us</a>
+            <div>
+              <a href="javascript:void(0);" class="navigation__link">Services <i class="fa-solid fa-angle-down"></i></a>
+              <ul>
+                <li>
+                  <a href="./cyber_security.html" class="navigation__link">Cyber security</a>
+                </li>
+                <li>
+                  <a href="./technology.html" class="navigation__link">Technology and architecture</a>
+                </li>
+                <li>
+                  <a href="./project_delivery.html" class="navigation__link">Project Delivery</a>
+                </li>
+              </ul>
             </div>
+            <a href="./careers.html" class="navigation__link">Careers</a>
+            <a href="./news.html" class="navigation__link">News</a>
+            <a href="./contactus.html" class="navigation__link">Contact Us</a>
+            <!-- <a href="mailto:rafal@fiveeyes.com.au" class="navigation__button">Get in touch</a> -->
+          </div>
 
-            <a href="#." id="hamburger">
-              <i class="fa-solid fa-bars"></i>
-            </a>
+          <a href="#." id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </a>
         </nav>
 
         <div class="content" data-template="contacts">
@@ -72,24 +72,25 @@
               </h1>
 
               <p class="contacts__info__label" data-animation="paragraph">
-                Reach out to Five Eyes Consulting for any enquiries or to further explore what we do. Complete the form and we’ll get back to you shortly.
+                Reach out to Five Eyes Consulting for any enquiries or to further explore what we do. Complete the form
+                and we’ll get back to you shortly.
               </p>
 
               <!-- <canvas class="contacts__canvas"></canvas> -->
             </div>
 
             <div class="contacts__footer">
-              <form class="contacts__footer__form">
+              <form class="contacts__footer__form" method="post" action="form_submit.php" id="contact">
                 <div class="contacts__footer__form__name">
                   <label for="nameTxt" data-animation="paragraph" class="contacts__footer__form__label">Name</label>
                   <br />
-                  <input type="text" id="nameTxt" placeholder="Name *" class="contacts__footer__form__input" />
+                  <input type="text" id="nameTxt" placeholder="Name *" name="username" class="contacts__footer__form__input" required />
                 </div>
 
                 <div class="contacts__footer__form__email">
                   <label for="emailTxt" class="contacts__footer__form__label" data-animation="paragraph">Email</label>
                   <br />
-                  <input type="text" id="emailTxt" placeholder="Email *" class="contacts__footer__form__input" />
+                  <input type="email" id="emailTxt" placeholder="Email *" name="email" class="contacts__footer__form__input" required />
                 </div>
 
                 <div class="contacts__footer__form__organization">
@@ -97,7 +98,7 @@
                     Organization</label>
                   <br />
                   <input type="text" id="organizationTxt" placeholder="Company/ Organization"
-                    class="contacts__footer__form__input" />
+                    class="contacts__footer__form__input" name="company" required />
                 </div>
 
                 <div class="contacts__footer__form__enquiry">
@@ -105,13 +106,13 @@
                     data-animation="paragraph">Enquiry</label>
                   <br />
                   <textarea id="contentTxt" cols="30" rows="6" placeholder="Enquiry *"
-                    class="contacts__footer__form__textarea"></textarea>
+                    class="contacts__footer__form__textarea" name="message" required minlength="10"></textarea>
                 </div>
 
                 <input type="submit" value="Send Enquiry" class="contacts__footer__form__input" />
               </form>
 
-              
+
             </div>
           </section>
         </div>
